@@ -1,0 +1,114 @@
+Core Java
+
+Q.1) Write a java program to read the characters from a file, if a character is alphabet then reverse its case, if not then display its category on the Screen. (whether it is Digit or Space) 
+
+Q.2) Write a java program to accept n names of cites from user and display them in descending order.
+
+Q.3) Write a java program to accept the details of ‘n’ employees (EName ,Salary) from the user, store them into the Hashtable and displays the Employee Names having maximum Salary.
+
+Q.4) Design a screen in Java to handle the Mouse Events such as MOUSE_MOVED and MOUSE_CLICK and display the position of the Mouse_Click in a TextField.
+
+Q.5) Define a class Student with attributes rollno and name. Define default and parameterized constructor. Override the toString() method. Keep the count of Objects created. Create objects using parameterized constructor and Display the object count after each object is created.
+
+Q.6) Create a calculator with functionality in an Applet
+
+
+Q.7) Write a java program to display “Hello Java” with settings Font- Georgia, Foreground color- Red, background color – Blue on the Frame.
+
+Q.8) Write a java program to design a following GUI (Use Swing).
+
+Q.9) Write a java program to display the contents of a file in reverse order.
+
+Q.10) . Write an applet application in Java for designing Temple.
+
+Q.11) Write a java program to accept Employee name from the user and check whether it is valid or not. If it is not valid then throw user defined Exception “Name is Invalid” otherwise display it.
+
+Q.12) Q1. Write a java program to accept list of file names through command line and delete the files having extension “.txt”. Display the details of remaining files such as FileName and size.
+
+Q.13) Write a java program to copy the contents of one file into the another file, while copying change the case of alphabets and replace all the digits by ‘*’ in target file.
+
+Q.14) Write a Java program which will create a frame if we try to close it, it should change it’s color and it remains visible on the screen(Use swing).
+
+Q.15) Define an abstract class Shape with abstract methods area() and volume(). Write a java program to calculate area and volume of Cone and Cylinder.
+
+Q.16) Write an application in Java using Awt to display 4 X 4 squares on the screen. One of the block will be active with black color. All other blocks should be filled with blue color. Provide command buttons as follows to move the active cell. The active cell should be changed only if it is within the boundary of the squares otherwise give the beep.
+
+
+Q.17) Write a Java program to design a screen using AWT that will take a user name and password. If the user name and password are not same, raise an Exception with appropriate message. User can have 3 login chances only. Use clear button to clear the TextFields.
+
+Q.18) Write a java program that displays the number of characters, lines & words from a file.
+
+Q.19) Write a java program to accept a number from the user, if number is zero then throw user defined Exception “Number is 0” otherwise calculate the sum of first and last digit of a given number (Use static keyword).
+
+Q.20) Write a package for Games in Java, which have two classes Indoor and Outdoor. Use a function display () to generate the list of players for the specific games. (Use Parameterized constructor, finalize() method and Array Of Objects)
+
+Q.21) Write a Java program to design a screen using Swing that will create four TextFields. First for the text, second for what to find and third for replace. Display result in the fourth TextField. Display the count of total no. of replacements made. The button clear to clear the TextFields.
+
+Q.22) Define an Interface Shape with abstract method area(). Write a java program to calculate an area of Circle and Sphere.(use final keyword)
+
+Q.23) Write a java program to accept the details of n Cricket Players from user (Player code, name, runs, innings- played and number of times not out). The program should contain following menus : - i)Display average runs of a single player. ii) Display average runs of all players. (Use array of objects, Method overloading and static keyword)
+
+Q.24) Write a Java Program to accept the details of Employee(Eno, EName,Sal) from the user and display it on the next Frame. (Use AWT)
+
+Q.25) Define an Employee class with suitable attributes having getSalary() method, which returns salary withdrawn by a particular employee. Write a class Manager which extends a class Employee, override the getSalary() method, which will return salary of manager by adding traveling allowance, house rent allowance etc.
+
+Q.26) Write a java Program to accept ‘n’ no’s through the command line and store all the prime no’s and perfect no’s into the different arrays and display both the arrays.
+
+Q.27) .Write a java program to accept the details employee (Eno, Ename ,Salary) and add it into the JTable by clicking on the Button.(Max : 5 Records)
+
+Q.28) Write a java program to read n Students names from user, store them into the ArrayList collection. The program should not allow duplicate names. Display the names in Ascending order.
+
+Q.29) Write a java program to accept n employee names from user, store them into the LinkedList class and display them by using. a)Iterator Interface b)ListIterator Interface
+
+Q.30) Write an applet application in Java for smile face.
+
+
+ADVANCED JAVA
+
+=>: Write a java program to display IP Address and Name of client machine.
+
+=>Write a multithreading program in java to display all the vowels from a given String.
+
+=>Write a JDBC program to display the details of employees (eno, ename, department, sal) whose department is “Computer Science”.
+
+=>Write a java program to display “Hello Java” message n times on the screen. (Use Runnable Interface).
+
+=>Write a java program to create Teacher table(TNo.TName, Sal, Desg) and insert a record in it.
+
+=>Write a java program to accept the details of customer (CID, CName, Address, Ph_No) and store it into the database(Use PreparedStatement interface)
+
+=>Write a JSP program to calculate sum of first and last digit of a given number. Display sum in Red Color with font size 18.
+
+=>Write a multithreading program using Runnable interface to blink Text on the frame.
+
+=>Write a JDBC program to delete the records of employees whose names are starts with ‘A’character.
+
+=>Write a JDBC program to count the number of records in table.(Without using standard method)
+
+=>Write a JDBC program to remove “percentage” column from student (rno, sname, percentage) table. Student table is already created
+
+=>Write a java program to display the number’s between 1 to 100 continuously in a TextField by clicking on button. (use Runnable Interface)
+
+=>Write a java program to create a Mobile (Model_No, Company_Name, Price, Color) table.
+
+=>Write a client server programs which displays the server machines date and time on the client machine
+
+=>Write a JDBC program in java to update an address of given customer(cid,cname,address) and display updated details.
+
+=>Write a JSP page, which accepts user name in a text box and greets the user according to the time on server machine.
+
+=>Write a java program which will display name and priority of current thread. Change name of Thread to MyThread and set the priority to 2 and display it on screen.
+
+=>Write a java program using multithreading to execute the threads sequentially.(Use Synchronized Method)
+
+=>Create a JSP page to accept a number from an user and display it in words: Example: 123 One Two Three. The output should be in red color.
+
+=>Write a JSP program to display the details of Hospital (HNo, HName, Address) in tabular form on browser
+
+=>Write a JDBC Program in java to display the names of Employees starting with ‘S’ character
+
+=>Write a java program to display IP Address and Name of client machine.
+
+=>Write a JSP script to accept the details of Student (RNo, SName, Gender, Comp_Know ,Class) and display it on the browser. Use appropriate controls for accepting data.  
+
+
