@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\Atharva\College Notes and Textbooks\Sem 4\Slips\Java\.metadata\.plugins\org.eclipse.jdt.core
-1513512537.index
-1865797976.index
-2204240702.index
