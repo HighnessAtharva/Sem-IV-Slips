@@ -18,14 +18,6 @@
 <?php 
 error_reporting(E_ERROR | E_PARSE);
 $userInput=$_POST['mydata'];
-$essay_file = fopen("MyData.txt", "w+"); 
-fwrite($essay_file, (htmlspecialchars($userInput)));  
-fclose($essay_file);
+file_put_contents("MyData.txt", (htmlspecialchars($userInput)));
 if (count($_POST)>0) echo '<hr>Thank You! Your essay can be found in the `MyData.txt` file'; 
-
-?>
-
-<?php 
-error_reporting(E_ERROR | E_PARSE);
-
 ?>
