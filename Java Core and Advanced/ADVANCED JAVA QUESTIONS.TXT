@@ -1,0 +1,187 @@
+Slip1
+
+Q1. Write a java program to display IP Address and Name of client machine.        
+Q2.Write a JSP script to accept username, store it into the session, compare itwith password in another jsp file, if username matches with password thendisplay appropriate message in html file.                                                                                                                                        
+
+
+Slip2
+Q1. Write a multithreading program in java to display all the vowels from a given String.(Use Thread Class)                                                                                                                   
+Q2. Write a SERVLET program which counts how many times a user has visited a web page. If user is visiting the page for the first time, display a welcome message. If the user is revisiting the page, display the number of times visited. (Use Cookie)                                                                                                                                                                                                             
+
+Slip3
+Q1. Write a JDBC program to displays the details of employees (eno, ename, department, sal) whose department is “Computer Science”.                                                                         
+Q2. Write a java program to simulate traffic signal using multithreading.                            
+
+Slip4
+Q1. Write a java program to display “Hello Java” message n times on the screen. (Use Runnable Interface).                                                                                                                                
+Q2.Write a JSP program to create an onlineshopping mall. User must be allowed to do purchase from two pages. Each pageshould have a page total. The third page should display a bill, which consistsof a page total of whatever the purchase has been done and print the total.          (Use Session)
+                                                                                                                                               
+
+Slip5
+
+Q1. Write a java program to create Teacher table(TNo.TName, Sal, Desg) and insert a record in it.                                                                                                                                               
+Q2.  Write a MultiThreading program in java usingRunnable interface to draw temple flag on an applet container.
+
+ 
+Slip6
+
+Q1. Write a JDBC program to accept the details of customer (CID, CName, Address, Ph_No) and store it into the database (Use PreparedStatement interface)
+Q2.Write a SOCKET program in java to check whether given file is present on serveror not, If it is present then display its content on the server’s machineotherwise display error message.
+                                                                                                                                               
+
+Slip7
+Q1. Write a JSP program to calculate sum of first and last digit of a given number. Display sum in Red Color with font size 18.                                                                           
+Q2. Write a Multithreading program in java for Racing Car. (Use AWT)                
+
+
+Slip8
+Q1. Write a Multithreading program using Runnable interface to blink Text on the frame. 
+Q2. Write a SERVLET application to accept username and password, search them into database, if found then display appropriate message on the browser otherwise display error message.                                                                                                                                                         
+
+Slip9
+
+Q1.  Write a JDBC program to delete the records of employees whose names are starting with ‘A’ character.                                                                                                                              
+Q2.  Write a Multithreading program in java using Runnable interface to move text on the frame as follow:
+
+                                                                                                                                                     
+
+Starting Position of Text                                                                                                        
+
+
+Slip10
+
+Q1.  Write a JDBC program to count the number of records in table. (Without using standard method)                                                                                                                           
+Q2.  Write a Multithreading program in java forbouncing ball. For each bounce, Change the color of ball randomly.
+
+Slip11
+Q1. Write a JDBC program to remove “percentage” column from student (rno, sname, percentage) table.                                                                                                                   
+Q2.Write a SERVLET program to change inactive time interval of session.                       
+
+
+
+Slip12
+Q1. Write a Multithreading program in java to display the number’s between 1 to 100 continuously in a TextField by clicking on button.      (use Runnable Interface).                   
+Q2. Write a JSP program to accept the details of Account (ANo, Type, Bal) and store it into database and display it in tabular form. (Use PreparedStatement interface)                                      
+
+Slip13
+Q1. Write a JDBC program to create a Mobile (Model_No, Company_Name, Price, Color) table and insert a  record in it.                                                                                                                
+Q2.  Write a Socket program in java for simplestand alone chatting application.                
+
+Slip14
+Q1. Write a Socket program in java which displays the server machine’s date and time on the client machine. 
+Q2. Write a JDBCprogram in java to display details of Book_Sales(SalesID, Date, Amount)  of selected month in JTable. Book_sales tableis already created.  (Use JCombocomponent for Month selection)          
+
+Slip15
+
+Q1. Write a JDBC program in java to update an address of given customer(cid,cname,address) and display updated details.                                                                                                
+Q2. Write a SERVLETprogram in java to accept details of student (SeatNo, Stud_Name, Class, Total_Marks).Calculate percentage and grade obtained and display details on page.                                                                                                                                                                    
+Slip16
+Q1. Write a JSP program which accept UserName in a TextBox and greets the user
+according to the time on server machine.                                                                  
+Q2. Write aprogram in java which will show lifecycle (creation, sleep, and dead) of athread. Program should print randomly the name of thread and value of sleeptime. The name of the thread should be hard coded through constructor. Thesleep time of a thread will be a random integer in the range 0 to 4999.                                                                                         
+
+
+Slip17
+Q1.  Write a java program which will display name and priority of current thread. Change name of Thread to MyThread and priority to 2. Display the details of Thread.                                                                                                                                                                                      
+Q2.  Write a JDBC application using swing for the following:
+
+Type DDL Query
+       
+                                                                                                                                                    
+
+
+
+Create Table
+Drop Table
+Alter Table
+ 
+
+Slip18
+Q1. Write a java program using multithreading to execute the threads sequentially.
+      (Use Synchronized Method)                                                                                           
+Q2.  Write a SERVLET program that providesinformation about a HTTP request from a client, such as IP address and browsertype. The servlet also provides information about the server on which theservlet is running, such as the operating system type, and the names of currentlyloaded servlets. 
+
+Slip19
+Q1. Create a JSP page to accept a number from an user and display it in words:
+Example: 123 – One Two Three. The output should be in red color.                                                
+Q2.Write a Multithreading program in java to convert smile face into the cryingface after 5 seconds and vice versa(Use Applet).                             
+
+
+Slip20
+
+Q1. Write a JSP program to display the details of Hospital (HNo, HName, Address) in tabular form on browser.                                                                                                                         
+Q2. Write a Socket program in java for chatting application.  (Use AWT)
+                                                                                                                                               
+
+Slip21
+Q1. Write a JDBC Program in java to display the names of Employees starting with ‘S’ character.                                                                                                                                   
+Q2.Write a SERVLET program to Design an HTML pagecontaining 4 option buttons (Painting, Drawing, Singing and swimming) and 2buttons reset and submit. When the user clicks submit, the server responds byadding cookie containing the selected hobby and sends the HTML page to theclient. Program should not allow duplicate cookies to be written.
+
+
+Slip22
+Q1. Write a Socket program in java in which client accept a number, send it to the server, server calculates its factorial and sends result to the client.                                                                      
+Q2. Write a java program to create a student table with field’s rno, name and per. Insert values in the table. Display all the details of the student on screen. (Use PreparedStatement Interface)
+
+
+
+
+
+
+
+Slip23
+
+Q1. Write a JSP script to accept the details of Student (RNo, SName, Gender, Computer_ Knowledge , Class)   and display it on the browser. Use appropriate controls for accepting data.
+Q2. Write a Java Program to Read, Update and Delete any record from “Elements” table. The table has following fields (Atomic_weight , Name (primary key), Chemical_Symbol). The input should be provided through Command Line Arguments along with the appropriate data.
+The operations are: R : Read, U: Update, D: Delete.
+The syntax for Read: R
+The syntax for Delete: D name                                                                                              
+AssumeElements table is already created.
+
+           
+
+Slip24
+
+Q1. Write a JSP script to check whether given mail ID is valid or not. (Mail ID should contain one @ symbol and atleast one Dot(.) symbol)                                                                  
+Q2.Write a java program to accept the details of college(CID, CName, Address, year) and store it into database (Use Swing andPreparedStatement interface)                                              
+
+Slip25
+Q1. Write a JSP script to accept UserName and his NickName through html page and then displays username when visit count to page is odd and displays nickname when the visit count to the page is even.                                                                                                            
+Q2. Write a JDBC program for implementation of scrollable ResultSet. Consider Emp table (eno ename, sal)
+-          moveFirst
+-          moveNext
+-          movePrevious
+moveLast                  
+
+
+Slip26
+Q1. Write a Multithreading program in java to display all the alphabets from A to Z after 3 seconds.                                                                                                                               
+Q2. Write ajava program to display sales details of products between two dates inJTable(use database).  Consider producttable (pid, pname, amount).
+
+
+Slip27
+Q1. Write a JDBC program to delete the details of given employee (ENo EName Salary). Accept employee ID through command line.                                                                                                                                                                                                                                                   
+Q2.  Write a Multithreading  program in java to create an applet thatcontains a TextField to show time. The time should be displayed in thehh:mm:ss format. The thread should start when the user clicks the Startbutton and stop when the user clicks the stop button. Initialize the values tocurrent time.
+
+
+Slip28
+
+Q1. Write a JSP program to check whether given number is Armstrong or not. (Use Include directive).
+Q2. Write a java program to display the selected employee details in JTable. (use database, combo box for employee selection )  Employee having fields eno, ename, sal, desg.
+                                                                                                                                                
+Slip29
+Q1. Write a JSP program to accept Name and Age of Voter and check whether he is eligible for voting or not.
+Q2. Write a menu driven java program for the following:
+            Insert
+Update
+Delete
+Search
+Display
+Exit
+Consider Student (rno, sname, per) table for this.
+
+
+Slip30
+
+Q1. Write a JSP program to display all the prime number’s between 1 to n in “Blue” Color.                                  
+Q2. Write a SERVLET program to display the details of Product (ProdCode, PName, Price) on the browser in tabular format. (Use database)                                                                                   
+
