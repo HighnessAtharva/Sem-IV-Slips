@@ -19,7 +19,7 @@ class Slip1 {
                 System.out.print(c);
             } else if (Character.isDigit(c)) {
                 System.out.println(c + "Digit");
-            } else if (Character.isSpace(c))
+            } else if (Character.isWhitespace(c))
                 System.out.println(c + "Space");
             else
                 System.out.println(c);
