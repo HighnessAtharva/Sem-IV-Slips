@@ -1,17 +1,24 @@
-// Write an applet application in Java for smile face.
-
-import java.applet.Applet;
+// Java program to Draw a
+// Smiley using Java Applet
+import java.applet.*;
 import java.awt.*;
+/*<applet code ="Smiley" width=600 height=600>
+</applet>*/
 
-public class Slip30 extends Applet {
-    public void paint(Graphics g) {
-        g.drawOval(50, 15, 200, 200);
-        g.fillOval(80, 90, 30, 15);
-        g.fillOval(190, 90, 30, 15);
-        g.drawOval(17, 90, 30, 50);
-        g.drawOval(250, 90, 30, 50);
-        g.drawLine(150, 110, 150, 150);
-        // g.fillOval(80,160,10,35);
-        g.drawArc(100, 160, 100, 30, 170, 200);
-    }
+public class Smiley extends Applet {
+	public void paint(Graphics g)
+	{
+
+		// Oval for face outline
+		g.drawOval(80, 70, 150, 150);
+
+		// Ovals for eyes
+		// with black color filled
+		g.setColor(Color.BLACK);
+		g.fillOval(120, 120, 15, 15);
+		g.fillOval(170, 120, 15, 15);
+
+		// Arc for the smile
+		g.drawArc(130, 180, 50, 20, 180, 180);
+	}
 }
