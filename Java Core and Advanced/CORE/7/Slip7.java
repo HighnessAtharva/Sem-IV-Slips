@@ -21,8 +21,8 @@ class Slip7 extends Frame {
     }
 
     public static void main(String arg[]) {
-        Slip7 s=new Slip7();
-    }
+        Slip7 s = new Slip7();
+    
 class MyWindowApapter extends WindowAdapter {
     MyWindowApapter(Slip7 s){
         this.s=s;
@@ -31,4 +31,4 @@ class MyWindowApapter extends WindowAdapter {
         System.exit(0);
     }
 }
-}
+}}

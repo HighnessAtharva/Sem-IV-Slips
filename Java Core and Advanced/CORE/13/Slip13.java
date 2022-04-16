@@ -24,7 +24,7 @@ class Slip13 {
             } else if (Character.isDigit(ch1)) {
                 ch1 = '*';
                 fw.write(ch1);
-            } else if (Character.isSpace(ch1)) {
+            } else if (Character.isWhitespace(ch1)) {
                 fw.write(ch1);
             }
         }

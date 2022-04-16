@@ -30,7 +30,7 @@ class Slip19 {
                     }
                     sum = sum + rem;
                 }
-                System.out.println("Sum is: " + sum);
+                System.out.println("Sum of first and last digit is: " + sum);
             }
         } catch (ZeroException e) {
             System.out.println(e);

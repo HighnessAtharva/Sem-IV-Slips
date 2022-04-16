@@ -43,6 +43,24 @@ class Cylinder extends Shape {
 }
 
 
+class Sphere extends Shape {
+    int r, h;
+
+    Sphere(int r, int h) {
+        this.r = r;
+        this.h = h;
+    }
+
+    public void area() {
+        System.out.println("Area of Sphere = " + (4 * 3.14 * r * r));
+    }
+
+    public void vol() {
+        System.out.println("volume of Sphere = " + ((4/3) * r * r * r * 3.14));
+    }
+}
+
+
 class Slip15 {
 
     public static void main(String a[]) {
@@ -55,12 +73,21 @@ class Slip15 {
         s = new Cone(r, s1, h);
         s.area();
         s.vol();
+        
         System.out.println("Enter radius, height for cylinder");
         r = sc.nextInt();
         h = sc.nextInt();
-        sc.close();
         s = new Cylinder(r, h);
         s.area();
         s.vol();
+
+        System.out.println("Enter radius, height for Sphere");
+        r = sc.nextInt();
+        h = sc.nextInt();
+        s = new Sphere(r, h);
+        s.area();
+        s.vol();
+
+        sc.close();
     }
 }

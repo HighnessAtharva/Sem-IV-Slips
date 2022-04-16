@@ -7,14 +7,15 @@ import java.io.*;
 public class Slip28 {
     public static void main(String args[]) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList a = new ArrayList();
-        System.out.println("\nEnter number of Employee : ");
+        ArrayList <String>a = new ArrayList<String>();
+        System.out.println("\nEnter number of Students : ");
         int n = Integer.parseInt(br.readLine());
         System.out.println("\nEnter name : ");
         for (int i = 1; i <= n; i++) {
             a.add(br.readLine());
         }
-        TreeSet tr = new TreeSet(a);
+     
+        TreeSet <String>tr = new TreeSet<String>(a);
         System.out.println("Sorted name are : " + tr);
     }
 }

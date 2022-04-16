@@ -31,7 +31,7 @@ Slip15. Define an abstract class Shape with abstractmethods area() and volume().
 
 Slip16.Write an application in Java using Awt todisplay 4 X 4 squares on the screen. One of the block will be active with blackcolor. All other blocks should be filled with blue color. Provide commandbuttons as follows to move the active cell. The active cell should be changedonly if it is within the boundary of the squares otherwise give the beep.
 
-Slip17. Write a Java program to design a screenusing Awt that will take a user name and password. If the user name andpassword are not same, raise an Exception with appropriate message. User canhave 3 login chances only. Use clear button to clear the TextFields.
+Slip17. Write a Java program to design a screen using Awt that will take a user name and password. If the user name andpassword are not same, raise an Exception with appropriate message. User canhave 3 login chances only. Use clear button to clear the TextFields.
 
 Slip18: Write a java program that displays thenumber of characters,lines & words from a file.
 
@@ -39,7 +39,7 @@ Slip19.Write a java program to accept a number fromthe user, if number is zero t
 
 Slip20.Write a package for Games in Java, which havetwo classes Indoor and Outdoor.Use a function display () to generate the listof players for the specific games. (Use Parameterized constructor, finalize()method and Array Of Objects)
 
-Slip21. Write a Java program to design a screenusing Swing that will create four TextFields. First for the text, second forwhat to find and third for replace.Display result in the fourth TextField.Display the count of total no. of replacements made. The button clear to clearthe TextFields.
+Slip21. Write a Java program to design a screen using Swing that will create four TextFields. First for the text, second forwhat to find and third for replace.Display result in the fourth TextField.Display the count of total no. of replacements made. The button clear to clearthe TextFields.
 
 Slip22. Define an Interface Shape with abstractmethod area(). Write a java program to calculate an area of Circle andSphere.(use final keyword)
 
@@ -65,3 +65,6 @@ a. Iterator Interface
 b.ListIterator Interface
 
 Slip30. Write an applet application in Java forsmile face.
+
+31. Krishnamurthy number
+32. Email Validation @ symbol and User Defined Exception

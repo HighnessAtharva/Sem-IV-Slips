@@ -21,6 +21,7 @@ public class Slip3 {
 
         Enumeration v = h.elements(); // sal
         Enumeration k = h.keys(); // name
+        System.out.println("\nEntered Info is:");
         while (k.hasMoreElements()) {
             System.out.println(k.nextElement() + " " + v.nextElement());
         }
