@@ -1,3 +1,5 @@
+// Working of Anonymous InnerClass
+
 abstract class Person{  
     abstract void eat();  
   }  

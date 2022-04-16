@@ -1,11 +1,7 @@
-
+// Write a java program to read n students names from user, store them into linkedlist collection. Display the 	names in ascending order.	
 import java.util.*;
- 
-// Main class
 public class Slip34 {
- 
-    // Main driver method
-    public static void main(String args[])
+     public static void main(String args[])
     {
         LinkedList<String> ll = new LinkedList<String>();
         Scanner sc = new Scanner(System.in);

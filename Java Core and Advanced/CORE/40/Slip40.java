@@ -1,4 +1,4 @@
-
+// WAP in java to accept a string from the user and display each word of the string in reverse order. Ex - "Hello World" is displayed as “olleH dlroW
 class Slip40 {
       static String makeReverse(String str) {
       StringBuffer s = new StringBuffer(str);

@@ -1,3 +1,4 @@
+// Check palindrome
 public class Slip38    
 {    
     public static void main(String[] args) {    

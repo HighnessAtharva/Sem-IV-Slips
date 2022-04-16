@@ -1,3 +1,5 @@
+// Krishnamurthy number
+
 import java.util.Scanner;  
 class Slip31 {   
     static int fact(int number)   
