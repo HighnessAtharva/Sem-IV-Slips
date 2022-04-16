@@ -4,26 +4,26 @@ import java.awt.*;
 import javax.swing.*;
 
 class Slip8 extends JFrame {
-    JLabel l1, l2, l3, l4, l5, l6;
-    JTextField t1, t2, t3;
-    JTextArea t;
-    JPanel p, p1, p2, p3;
+    Label l1, l2, l3, l4, l5, l6;
+    TextField t1, t2, t3;
+    TextArea t;
+    Panel p, p1, p2, p3;
     ButtonGroup bg;
     JRadioButton m, f;
     JCheckBox c1, c2, c3;
-    JButton b1, b2;
+    Button b1, b2;
 
     Slip8() {
-        p = new JPanel();
-        p1 = new JPanel();
-        l1 = new JLabel("First Name ");
-        l2 = new JLabel("last Name ");
-        l3 = new JLabel("Address ");
-        l4 = new JLabel("mobile No ");
-        t1 = new JTextField(10);
-        t2 = new JTextField(10);
-        t3 = new JTextField(10);
-        t = new JTextArea(2, 10);
+        p = new Panel();
+        p1 = new Panel();
+        l1 = new Label("First Name ");
+        l2 = new Label("last Name ");
+        l3 = new Label("Address ");
+        l4 = new Label("mobile No ");
+        t1 = new TextField(10);
+        t2 = new TextField(10);
+        t3 = new TextField(10);
+        t = new TextArea(2, 10);
         p.add(l1);
         p.add(t1);
         p.add(l2);
@@ -34,7 +34,7 @@ class Slip8 extends JFrame {
         p.add(t3);
         p.setLayout(new GridLayout(4, 2));
         add(p);
-        l5 = new JLabel("Gender ");
+        l5 = new Label("Gender ");
         m = new JRadioButton("male");
         f = new JRadioButton("female");
         bg = new ButtonGroup();
@@ -44,8 +44,8 @@ class Slip8 extends JFrame {
         p1.add(m);
         p1.add(f);
         p1.setLayout(new GridLayout(1, 3));
-        p2 = new JPanel();
-        l6 = new JLabel("Your Interests ");
+        p2 = new Panel();
+        l6 = new Label("Your Interests ");
         c1 = new JCheckBox("Computer");
         c2 = new JCheckBox("Sports");
         c3 = new JCheckBox("Music");
@@ -54,9 +54,9 @@ class Slip8 extends JFrame {
         p2.add(c2);
         p2.add(c3);
         p2.setLayout(new GridLayout(1, 4));
-        p3 = new JPanel();
-        b1 = new JButton("submit");
-        b2 = new JButton("clear");
+        p3 = new Panel();
+        b1 = new Button("submit");
+        b2 = new Button("clear");
         p3.add(b1);
         p3.add(b2);
         add(p);
@@ -68,6 +68,8 @@ class Slip8 extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+
+   
 
     public static void main(String a[]) {
         new Slip8();
