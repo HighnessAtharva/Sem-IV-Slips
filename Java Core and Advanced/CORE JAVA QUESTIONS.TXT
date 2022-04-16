@@ -67,12 +67,25 @@ b.ListIterator Interface
 Slip30. Write an applet application in Java forsmile face.
 
 31. Krishnamurthy number
+
 32. Email Validation @ symbol and User Defined Exception
+
 33. Palindrome numbers from 1 to 200
+
 34. Write a java program to read n students names from user, store them into linkedlist collection. Display the 	names in ascending order.	
+
 35. Write a Java program to create class Employee (eno,ename,age,salary).If  age is less than 18 then raise an exception ‘Age not valid Exception’ else display the record 
+
 36. TreeSet
+
 37.  Invalid String if less than 6 characters else print upper case 
+
 38. Check palindrome
+
 39. Anonymous Inner Class
+
 40. WAP in java to accept a string from the user and display each word of the string in reverse order. Ex - "Hello World" is displayed as “olleH dlroW
+
+41. Write an AWT application that contains a frame and two buttons “RED” and “BLUE”. On clicking the button give respective colour to the frame	
+
+42. Write a Java program to accept a number from the user and find the square root of the same									
