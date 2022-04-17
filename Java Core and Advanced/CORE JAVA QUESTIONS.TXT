@@ -2,7 +2,7 @@ Slip 1. Write a java program to read the charactersfrom a file, if a character i
 
 Slip 2. Write a java program to accept n names ofcites from user and display them in descending order.
 
-Slip3.Write a java program to accept the details of‘n’ employees (EName ,Salary) from the user, store them into the Hashtable anddisplays the Employee Names havin maximum Salary.
+Slip3. Write a java program to accept the details of‘n’ employees (EName ,Salary) from the user, store them into the Hashtable anddisplays the Employee Names havin maximum Salary.
 
 Slip4.Design a screen in Java to handle the MouseEvents such as MOUSE_MOVED and MOUSE_CLICK and display the position of theMouse_Click in a TextField.
 
@@ -18,18 +18,18 @@ Slip 9. Write a java program to display the contentsof a file in reverse order.
 
 Slip10.Write an Applet application in Java fordesigning Temple.
 
-Slip11.Write a java program to accept Employee name from the user and check whether it
+------Slip11.Write a java program to accept Employee name from the user and check whether it
 is valid or not. If it is not valid then throw userdefined Exception “Name is Invalid” otherwise display it.
 
-Slip12.Write a java program to accept list of filenames through command line and delete the files having extension “.txt”.Display the details of remaining files such as FileName and size.
+--------Slip12.Write a java program to accept list of filenames through command line and delete the files having extension “.txt”.Display the details of remaining files such as FileName and size.
 
-Slip13.Write a java program to copy the contents ofone file into the another file, while copying change the case of alphabets andreplace all the digits by ‘*’ in target file .
+Slip13.Write a java program to copy the contents of one file into the another file, while copying change the case of alphabets andreplace all the digits by ‘*’ in target file .
 
-Slip14.Write a Java program which will create aframe if we try to close it, it should change it’s color and it remains visible on the screen(Use swing).
+-------Slip14.Write a Java program which will create aframe if we try to close it, it should change it’s color and it remains visible on the screen(Use swing).
 
-Slip15. Define an abstract class Shape with abstractmethods area() and volume(). Write a java program to calculate area and volumeof Cone and Cylinder.
+Slip15. Define an abstract class Shape with abstractmethods area() and volume(). Write a java program to calculate area and volumeof Cone and Cylinder and Sphere.
 
-Slip16.Write an application in Java using Awt todisplay 4 X 4 squares on the screen. One of the block will be active with blackcolor. All other blocks should be filled with blue color. Provide commandbuttons as follows to move the active cell. The active cell should be changedonly if it is within the boundary of the squares otherwise give the beep.
+----- Slip16.Write an application in Java using Awt todisplay 4 X 4 squares on the screen. One of the block will be active with blackcolor. All other blocks should be filled with blue color. Provide commandbuttons as follows to move the active cell. The active cell should be changedonly if it is within the boundary of the squares otherwise give the beep.
 
 Slip17. Write a Java program to design a screen using Awt that will take a user name and password. If the user name andpassword are not same, raise an Exception with appropriate message. User canhave 3 login chances only. Use clear button to clear the TextFields.
 
@@ -37,22 +37,22 @@ Slip18: Write a java program that displays thenumber of characters,lines & words
 
 Slip19.Write a java program to accept a number fromthe user, if number is zero then  throwuser defined Exception “Number is 0” otherwise calculate the sum of first andlast digit of a given number (Use static keyword).
 
-Slip20.Write a package for Games in Java, which havetwo classes Indoor and Outdoor.Use a function display () to generate the listof players for the specific games. (Use Parameterized constructor, finalize()method and Array Of Objects)
+Slip20.Write a package for Games in Java, which have two classes Indoor and Outdoor.Use a function display () to generate the listof players for the specific games. (Use Parameterized constructor, finalize()method and Array Of Objects)
 
 Slip21. Write a Java program to design a screen using Swing that will create four TextFields. First for the text, second forwhat to find and third for replace.Display result in the fourth TextField.Display the count of total no. of replacements made. The button clear to clearthe TextFields.
 
-Slip22. Define an Interface Shape with abstractmethod area(). Write a java program to calculate an area of Circle andSphere.(use final keyword)
+Slip22. Define an Interface Shape with abstractmethod area (. Write a java program to calculate an area of Circle and Sphere.(use final keyword)
 
-Slip23.Write a java program to accept the details of n Cricket Players from user (Player
+---------Slip23.Write a java program to accept the details of n Cricket Players from user (Player
 code, name, runs, innings- played and number of times not out). The program
 should contain following menus:
 -Display average runs of a single player.
 -Display average runs of all players. (Use array of objects, Method overloading and
 statickeyword)
 
-Slip24.Write a Java Program to accept the details of Employee(Eno, EName,Sal) from theuser and display it on the next Frame. (Use AWT)
+-------Slip24.Write a Java Program to accept the details of Employee(Eno, EName,Sal) from theuser and display it on the next Frame. (Use AWT)
 
-Slip25.Define an Employee class with suitableattributes having getSalary() method, which returns salary withdrawn by aparticular employee. Write a class Manager which extends a class Employee,override the getSalary() method, which will return salaryof manager by addingtraveling allowance, house rent allowance etc.
+Slip25.Define an Employee class with suitable attributes having getSalary() method, which returns salary withdrawn by aparticular employee. Write a class Manager which extends a class Employee,override the getSalary() method, which will return salaryof manager by addingtraveling allowance, house rent allowance etc.
 
 Slip26.Write a java Program to accept ‘n’ no’sthrough the command line and store all the prime no’s and perfect no’s into thedifferent arrays and display both the arrays.
 
