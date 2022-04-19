@@ -10,6 +10,7 @@ class Slip2{
         System.out.println("Enter the name of 5 cities ");
         for (int i = 0; i < 5; i++) {
             str[i] = sr.next();
+           
         }
         sr.close();
         System.out.println("After sorting the order is: ");

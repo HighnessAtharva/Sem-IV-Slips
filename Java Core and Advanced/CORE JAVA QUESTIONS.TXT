@@ -89,3 +89,6 @@ Slip30. Write an applet application in Java forsmile face.
 41. Write an AWT application that contains a frame and two buttons “RED” and “BLUE”. On clicking the button give respective colour to the frame	
 
 42. Write a Java program to accept a number from the user and find the square root of the same									
+43. Write a java program to display “Hello Java” with settings Font- Georgia, Foreground color- Red, background color – Blue on the Frame (Use Label)
+
+44. Write an awt program with 3 buttons, “Yes”, ”No”, “Maybe”. Display the corresponding message when clicked.

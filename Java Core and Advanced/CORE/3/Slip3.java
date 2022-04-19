@@ -19,14 +19,18 @@ public class Slip3 {
             h.put(name, sal);
         }
 
+        Enumeration k = h.keys(); //names
         Enumeration v = h.elements(); // sal
-        Enumeration k = h.keys(); // name
+         // name
         System.out.println("\nEntered Info is:");
         while (k.hasMoreElements()) {
             System.out.println(k.nextElement() + " " + v.nextElement());
         }
-        int max = 0;
-        String str = "";
+
+        int max = 0; // to store the max salary
+        String str = ""; // to store name of the employee with max salary
+        
+        // important to re-declare the k,v variables and set them to h.keys() and h.elements()
         k = h.keys();
         v = h.elements();
         while (v.hasMoreElements()) {
