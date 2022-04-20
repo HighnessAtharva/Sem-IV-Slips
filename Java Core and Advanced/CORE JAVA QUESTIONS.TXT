@@ -91,4 +91,21 @@ Slip30. Write an applet application in Java forsmile face.
 42. Write a Java program to accept a number from the user and find the square root of the same									
 43. Write a java program to display “Hello Java” with settings Font- Georgia, Foreground color- Red, background color – Blue on the Frame (Use Label)
 
-44. Write an awt program with 3 buttons, “Yes”, ”No”, “Maybe”. Display the corresponding message when clicked.
+-------44. DEPRECATED OLD PROGRAM. NOT IN SLIP
+
+45. YES NO MAYBE, AWT 3 buttons
+
+46. Print the following pattern by giving user a choice 
+OPTION 1                     OPTION 2
+
+1                            1234  
+12                           123
+123                          12
+1234                         1
+
+
+47. AWT program to display various key MouseEvents
+
+48. Write Java Program using Swing that accepts item name, item quantity and price and display total amount as output. (in seperate textbox)
+
+49. Write an awt program with 2 buttons, "Good Morning", "Good Evening" . Display the corresponding message when clicked.
