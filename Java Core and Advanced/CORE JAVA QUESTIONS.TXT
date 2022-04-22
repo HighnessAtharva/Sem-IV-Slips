@@ -12,7 +12,7 @@ Slip 6. Create a calculator with functionality in anApplet.
 
 Slip 7. Write a java program to display “HelloJava” with settings Font- Georgia, foreground color- Red, background color –Blue on the Frame.
 
-Slip 8. Write a java program to design a followingGUI (Use Swing).
+Slip 8. Write a java program to design a following GUI (Use Swing).
 
 Slip 9. Write a java program to display the contentsof a file in reverse order.
 
@@ -56,7 +56,7 @@ Slip25.Define an Employee class with suitable attributes having getSalary() meth
 
 Slip26.Write a java Program to accept ‘n’ no’sthrough the command line and store all the prime no’s and perfect no’s into thedifferent arrays and display both the arrays.
 
-Slip28. Write a java program to read n Studentsnames from user, store them into the
+----------------Slip28. Write a java program to read n Studentsnames from user, store them into the
 Array List collection. The program should not allow duplicate names. Display the  names in Ascending order.
 
 Slip29. Write a java program to accept n employee names from user, store them into the
