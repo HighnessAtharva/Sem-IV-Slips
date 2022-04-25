@@ -4,7 +4,7 @@
 
 import java.applet.Applet;
 import java.awt.*;
-
+/*<applet code="Slip10" height=500 width=500></applet>*/
 public class Slip10 extends Applet {
     public void paint(Graphics g) {
         g.drawRect(100, 150, 90, 120);

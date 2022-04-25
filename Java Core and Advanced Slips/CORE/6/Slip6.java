@@ -3,7 +3,7 @@
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
-
+/*<applet code="Slip6" height=500 width=500></applet>*/
 public class Slip6 extends Applet implements ActionListener {
     String str = " ";
     int v1, v2, result;
