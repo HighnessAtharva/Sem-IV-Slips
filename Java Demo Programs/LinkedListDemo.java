@@ -34,8 +34,8 @@ class LinkedListDemo
 		li.set(2,"G");
 		System.out.println("Contents of list are : "+li);
 		
-		int x=li.indexOf("D"):
-		System.out.println("The podition of D is "+ x)
+		int x=li.indexOf("D");
+		System.out.println("The podition of D is "+ x);
 		System.out.println("The contents of list are "+ li);
 		
 		

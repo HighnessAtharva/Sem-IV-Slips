@@ -8,19 +8,26 @@ class ArrayStudent
 	{
 		int i,n;
 		String m;
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter no of Students ");
-		n=sc.nextInt();
-		ArrayList<String> al=new ArrayList<String>();
-		//LinkedList<String> li=new LinkedList<String>();
-		for(i=0;i<n;i++)
-		{
-			m=sc.next();
-			//al,add(m);
-			al.add(m);
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter no of Students ");
+			n=sc.nextInt();
+			ArrayList<String> al=new ArrayList<String>();
+			//LinkedList<String> li=new LinkedList<String>();
+			for(i=0;i<n;i++)
+			{
+				m=sc.next();
+				//al,add(m);
+				al.add(m);
+			}
+			
+			
+			TreeSet<String> ts=new TreeSet<String>(al);
+			//TreeSet<String> ts=new TreeSet<String>(li);
+			System.out.println(ts);
 		}
-		TreeSet<String> ts=new TreeSet<String>(al);
-		//TreeSet<String> ts=new TreeSet<String>(li);
-		System.out.println(ts);
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 }

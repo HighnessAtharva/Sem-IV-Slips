@@ -1,0 +1,1 @@
+String result = String.valueOf(c);    

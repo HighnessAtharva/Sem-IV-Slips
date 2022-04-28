@@ -18,7 +18,7 @@ class ArrayDequeDemo
 		//pop the stack
 		String s;
 		
-		while(ad.seek()!=null)
+		while(ad.peek()!=null)
 		{
 			//System.out.println(ad.pop());
 			//s.ad.pop()
