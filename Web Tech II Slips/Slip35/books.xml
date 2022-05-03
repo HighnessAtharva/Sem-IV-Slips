@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>2005</year>
+        <publisher>Tor Publishing House</publisher>
+    </book>
+    <book> 
+        <title>Harry Potter</title>
+        <author>J K. Rowling</author>
+        <year>2005</year>
+        <publisher>Random House</publisher>
+    </book>
+    <book> 
+        <title>XQuery Kick Start</title>
+        <author>James McGovern</author>
+        <year>2003</year>
+        <publisher>Bandai Namco</publisher>
+    </book>
+    <book> 
+        <title>Learning XML</title>
+        <author>Erik T. Ray</author>
+        <year>2003</year>
+        <publisher>DC Comics</publisher>
+    </book>
+</library>

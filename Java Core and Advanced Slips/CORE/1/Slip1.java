@@ -4,18 +4,20 @@ import java.io.*;
 
 class Slip1 {
     public static void main(String a[]) throws Exception {
+        //use BufferedReader to accept input from the user (InputStreamReader(System.in))
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter file name ");
+        //br.readLine() method to accept input with spaces
         String f1 = br.readLine();
+        //make a FileReader object to read file. Use the fr.read() method to read the file
         FileReader fr = new FileReader(f1);
+        //initally use int to get character from file, check if end of file is not reached and then typecast it to a character and thusly, print characters one by to the screen
         int ch;
         while ((ch = fr.read()) != -1) {
             char c = (char) ch;
             if (Character.isUpperCase(c)) {
-                c = Character.toLowerCase(c);
-                System.out.print(c);
+                System.out.print(Character.toLowerCase(c));
             } else if (Character.isLowerCase(c)) {
-                c = Character.toUpperCase(c);
                 System.out.print(c);
             } else if (Character.isDigit(c)) {
                 System.out.println(c + "Digit");

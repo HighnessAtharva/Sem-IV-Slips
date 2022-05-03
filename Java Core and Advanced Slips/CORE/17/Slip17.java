@@ -4,25 +4,25 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class InvalidPasswordException extends Exception {
+class InvalidPasswordException extends Exception {    
 }
 
 public class Slip17 extends JFrame implements ActionListener {
-    JLabel name, pass;
-    JTextField nameText;
+    Label name, pass;
+    TextField nameText;
     JPasswordField passText;
-    JButton login, end;
+    Button login, end;
     static int attempt = 0;
 
     public Slip17() {
-        name = new JLabel("Name:", JLabel.RIGHT);
-        pass = new JLabel("Password:", JLabel.RIGHT);
+        name = new Label("Name:", Label.RIGHT);
+        pass = new Label("Password:", Label.RIGHT);
 
-        nameText = new JTextField(20);
+        nameText = new TextField(20);
         passText = new JPasswordField(20);
 
-        login = new JButton("Login");
-        end = new JButton("END");
+        login = new Button("Login");
+        end = new Button("END");
 
         login.addActionListener(this);
         end.addActionListener(this);
@@ -42,7 +42,7 @@ public class Slip17 extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent ae) {
-        JButton btn = (JButton) ae.getSource();
+        Button btn = (Button) ae.getSource();
         if (btn == end) {
             System.exit(0);
         }

@@ -4,7 +4,7 @@ import java.io.*;
 
 class Slip5 {
     static int cnt;
-    int roll;
+    int rno;
     String nm;
 
     Slip5() {
@@ -12,14 +12,14 @@ class Slip5 {
     }
 
     Slip5(int rno, String name) {
-        roll = rno;
-        nm = name;
+        this.rno = rno;
+        this.nm = name;
         cnt++;
         System.out.println("objects created=" + cnt);
     }
 
     public String toString() {
-        return "rno = " + roll + " nm = " + nm;
+        return "rno = " + this.rno + " nm = " + this.nm;
     }
 
     public static void main(String a[]) throws Exception {
@@ -38,7 +38,7 @@ class Slip5 {
         }
         System.out.println("Students are : ");
         for (i = 0; i < n; i++) {
-            System.out.println(ob[i]);
+            System.out.println(ob[i].toString());
         }
     }
 }

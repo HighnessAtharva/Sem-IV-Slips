@@ -17,7 +17,18 @@ class Slip4 extends Frame {
                 statusBar.setText("Entered at (" + e.getX() + "," + e.getY() + ")");
                 repaint();
             }
+
+            public void mousePressed(MouseEvent e) {
+                statusBar.setText("Mouse Pressed");
+                repaint();
+            }
+            
+            public void mouseReleased(MouseEvent e) {
+                statusBar.setText("Mouse Released");
+                repaint();
+            }
         });
+        
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);

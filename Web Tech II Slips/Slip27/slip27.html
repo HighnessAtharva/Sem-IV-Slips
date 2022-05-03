@@ -1,0 +1,25 @@
+<!-- Write a program to change the color of the elements using jQuery.  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div style="background-color:yellow">
+        <p>Click the button to change the background color of this paragraph.</p>
+        <button>Click me!</button>
+    </div>
+    <!-- make sure to add user defined script right before the end of the body tag -->
+    <script>
+        $("div").on("click", "button", function(event) {
+            $(event.delegateTarget).css("background-color", "green");
+        });
+    </script>
+
+</body>
+
+</html>

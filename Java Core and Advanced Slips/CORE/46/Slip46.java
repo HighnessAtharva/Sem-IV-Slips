@@ -8,41 +8,38 @@ public class Slip46 {
         sc.close();
         System.out.println("----------");
         if (n == 1) {
-            int i, j, num;
+            int i, j;
 
-            for (i = 0; i < 4; i++) // outer loop for rows
-            {
-                num = 1;
-                for (j = 0; j <= i; j++) // inner loop for rows
-                {
-                    // printing num with a space
-                    System.out.print(num + " ");
-
-                    // incrementing value of num
-                    num++;
+            for (i = 1; i <= 4; i++) {
+                for (j = 1; j <= i; j++){
+                    System.out.print(j + " ");   
                 }
+                System.out.println();
+            }
+            for (i = 4; i >= 1; i--) {
+                for (j = 1; j <= i; j++){
+                    System.out.print(j + " ");   
+                }
+                System.out.println();
+            }
+            
+        }
+        if (n == 2) {
+            int i, j;
 
-                // ending line after each row
+            for (i = 4; i >= 0; i--){
+                for (j = 1; j <= i; j++) 
+                {
+                    System.out.print(j + " ");
+                }
                 System.out.println();
             }
 
-        }
-        if (n == 2) {
-            int i, j, num;
-
-            for (i = 3; i >= 0; i--) // outer loop for rows
-            {
-                num = 1;
-                for (j = 0; j <= i; j++) // inner loop for rows
+            for (i = 1; i <=4; i++){
+                for (j = 1; j <= i; j++) 
                 {
-                    // printing num with a space
-                    System.out.print(num + " ");
-
-                    // incrementing value of num
-                    num++;
+                    System.out.print(j + " ");
                 }
-
-                // ending line after each row
                 System.out.println();
             }
         }

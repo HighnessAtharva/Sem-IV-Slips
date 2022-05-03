@@ -6,9 +6,11 @@ import java.io.*;
 class Slip18 {
     public static void main(String args[]) throws Exception {
         int ccnt = 0, lcnt = 1, wcnt = 0, c;
-        FileInputStream fin = new FileInputStream(args[0]);
+        FileReader fin = new FileReader(args[0]);
         while ((c = fin.read()) != -1) {
+            //character count will be increased obviously
             ccnt++;
+            //asicii value of space is 32  and ascll value of new line is 13
             if (c == 32 || c == 13)
                 wcnt++;
             if (c == 13)
