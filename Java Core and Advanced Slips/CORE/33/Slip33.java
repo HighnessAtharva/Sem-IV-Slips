@@ -1,9 +1,7 @@
 // Write a Java program to print palindrome numbers from 1 to 200.   
 public class Slip33 {
-
-    public static void main(String[] args) {
-        System.out.println(1 + " to " + 200 + " palindrome numbers are");
-        for (int i = 1; i <= 200; i++) {
+    static void palindrome(int start, int end) {
+        for (int i = start; i <= end; i++) {
             int num1 = i;
             int num2 = 0;
             while (num1 != 0) {
@@ -15,5 +13,10 @@ public class Slip33 {
             if (i == num2)
                 System.out.print(i + " ");
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(1 + " to " + 200 + " palindrome numbers are");
+        palindrome(1, 200);
     }
 }

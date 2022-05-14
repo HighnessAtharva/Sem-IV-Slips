@@ -70,9 +70,9 @@ class Slip15 {
         int s1 = sc.nextInt();
         int h = sc.nextInt();
         Shape s;
-        s = new Cone(r, s1, h);
-        s.area();
-        s.vol();
+        Cone c = new Cone(r, s1, h);
+        c.area();
+        c.vol();
         
         System.out.println("Enter radius, height for cylinder");
         r = sc.nextInt();

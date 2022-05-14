@@ -11,20 +11,19 @@ if (isset($_POST["submit"])) {
     $upwd = strip_tags($_POST["upwd"]);
     if ($conn) {
         $sql = "SELECT * FROM users WHERE username='$uname' AND password='$upwd'";
-        if ($result=mysqli_query($conn, $sql)){
-            if(mysqli_num_rows($result) > 0) {
-            session_start();
-            $_SESSION["myname"] = $uname;
-            echo "Session Variable Set. Welcome " . $_SESSION["myname"];
+        if ($result = mysqli_query($conn, $sql)) {
+            if (mysqli_num_rows($result) > 0) {
+                session_start();
+                $_SESSION["myname"] = $uname;
+                echo "Session Variable Set. Welcome " . $_SESSION["myname"];
+            }
+        } else {
+            echo "Invalid Username or Password!";
         }
     } else {
-            echo "Invalid Username or Password!";
-        } 
-    }
-    else{
         die("Connection Failed: " . mysqli_connect_error());
-    
-}
+
+    }
 }
 ?>
 

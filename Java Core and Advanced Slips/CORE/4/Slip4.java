@@ -7,38 +7,47 @@ class Slip4 extends Frame {
     TextField statusBar;
 
     Slip4() {
+      //start of addMouseListener
         addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent e) {
                 statusBar.setText("Clicked at (" + e.getX() + "," + e.getY() + ")");
+                //call the repaint() method or this shit wont work bro. DO NOT FORGET
                 repaint();
             }
 
             public void mouseEntered(MouseEvent e) {
                 statusBar.setText("Entered at (" + e.getX() + "," + e.getY() + ")");
+                //call the repaint() method or this shit wont work bro. DO NOT FORGET
                 repaint();
             }
 
             public void mousePressed(MouseEvent e) {
                 statusBar.setText("Mouse Pressed");
+                //call the repaint() method or this shit wont work bro. DO NOT FORGET
                 repaint();
             }
             
             public void mouseReleased(MouseEvent e) {
                 statusBar.setText("Mouse Released");
+                //call the repaint() method or this shit wont work bro. DO NOT FORGET
                 repaint();
             }
         });
+    //end of addMouseListener
         
+         //start of addMouseListener
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }
         });
+
+         //end of addMouseListener
+        statusBar = new TextField(20);
+        add(statusBar);
         setLayout(new FlowLayout());
         setSize(275, 300);
         setTitle("Mouse Click Position");
-        statusBar = new TextField(20);
-        add(statusBar);
         setVisible(true);
     }
 

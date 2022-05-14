@@ -17,6 +17,7 @@ public class Slip45 extends JFrame
           add(no);
           add(maybe);
           add(lbl);
+          
           setVisible(true);
 
           //setDefaultCloseOperation(JFrame.EXIT_NO_CLOSE);

@@ -3,7 +3,7 @@ import java.awt.event.*;
 public class delete extends Frame implements MouseListener{  
     Label l;  
     delete(){  
-        addMouseListener(this);  
+        //addMouseListener(this);  
           
         l=new Label();  
         l.setBounds(20,50,100,20);  
@@ -11,7 +11,7 @@ public class delete extends Frame implements MouseListener{
         Button b=new Button("Click me Retard");
         b.setBounds(20, 100, 40, 90);
         add(b);
-        b.addActionListener(this);
+        b.addMouseListener(this);
         setSize(300,300);  
         setLayout(null);  
         setVisible(true);  
@@ -39,6 +39,7 @@ public class delete extends Frame implements MouseListener{
     }  
    
 public static void main(String[] args) {  
-    new delete();  
+    delete d= new delete();  
+}
 }
 

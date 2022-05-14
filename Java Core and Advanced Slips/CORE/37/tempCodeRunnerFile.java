@@ -1,0 +1,1 @@
+ System.out.println("Less than 6 characters" + str);

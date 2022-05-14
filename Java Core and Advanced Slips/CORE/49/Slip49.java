@@ -2,11 +2,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class Slip49 extends JFrame
-{
+{ JLabel lbl;
      JButton morning,evening;
-     JLabel lbl;
      Slip49()
      {
+      
+    
           morning = new JButton("Good Morning");
           evening = new JButton ("Good Evening");
          
@@ -21,7 +22,7 @@ public class Slip49 extends JFrame
 
           //setDefaultCloseOperation(JFrame.EXIT_NO_CLOSE);
           ButtonHandler bh = new ButtonHandler();
-          morning.addActionListener(bh);
+          // morning.addActionListener(bh);
           morning.addActionListener(bh);
           evening.addActionListener(bh);
        

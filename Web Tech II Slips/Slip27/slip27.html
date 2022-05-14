@@ -4,7 +4,7 @@
 <html>
 
 <head>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>JS Bin</title>
 </head>
 
@@ -15,8 +15,10 @@
     </div>
     <!-- make sure to add user defined script right before the end of the body tag -->
     <script>
-        $("div").on("click", "button", function(event) {
-            $(event.delegateTarget).css("background-color", "green");
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("div").css("background-color", "green");
+            })
         });
     </script>
 

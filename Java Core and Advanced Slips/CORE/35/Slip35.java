@@ -3,11 +3,13 @@ class AgeException extends Exception {
 
     public AgeException(String str) {
         System.out.println(str);
+        //both the statement above and below work the same. super also works.
+        // super(str);
     }
 }
 
 class Employee {
-    Employee(int eno, String name, int age, int salary) throws AgeException {
+    public Employee(int eno, String name, int age, int salary) throws AgeException{
         if (age < 18) {
             throw new AgeException("Age should be greater than 18");
         } else {
@@ -21,6 +23,7 @@ class Employee {
 }
 
 public class Slip35 {
+    
     public static void main(String[] args) throws AgeException {
         try {
             System.out.println("------For Employee 1------");
