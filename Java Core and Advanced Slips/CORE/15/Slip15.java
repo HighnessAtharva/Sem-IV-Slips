@@ -1,7 +1,10 @@
 // Define an abstract class Shape with abstract methods area() and volume(). Write a java program to calculate area and volume of Cone and Cylinder.
 
 import java.util.*;
+
 abstract class Shape {
+    //definiing PI as constant
+    static final double PI= 3.14;
     abstract public void area();
 
     abstract public void vol();
@@ -17,11 +20,11 @@ class Cone extends Shape {
     }
 
     public void area() {
-        System.out.println("Area of Cone = " + (3.14 * r * s));
+        System.out.println("Area of Cone = " + (PI * r * s));
     }
 
     public void vol() {
-        System.out.println("volume of Cone = " + (3.14 * r * r * h) / 3);
+        System.out.println("volume of Cone = " + (PI * r * r * h) / 3);
     }
 }
 
@@ -34,14 +37,13 @@ class Cylinder extends Shape {
     }
 
     public void area() {
-        System.out.println("Area of Cylinder = " + (2 * 3.14 * r * h));
+        System.out.println("Area of Cylinder = " + (2 * PI * r * h));
     }
 
     public void vol() {
-        System.out.println("volume of Cylinder = " + (3.14 * r * r * h));
+        System.out.println("volume of Cylinder = " + (PI * r * r * h));
     }
 }
-
 
 class Sphere extends Shape {
     int r, h;
@@ -52,14 +54,13 @@ class Sphere extends Shape {
     }
 
     public void area() {
-        System.out.println("Area of Sphere = " + (4 * 3.14 * r * r));
+        System.out.println("Area of Sphere = " + (4 * PI * r * r));
     }
 
     public void vol() {
-        System.out.println("volume of Sphere = " + ((4/3) * r * r * r * 3.14));
+        System.out.println("volume of Sphere = " + ((4 / 3) * r * r * r * PI));
     }
 }
-
 
 class Slip15 {
 
@@ -73,7 +74,7 @@ class Slip15 {
         Cone c = new Cone(r, s1, h);
         c.area();
         c.vol();
-        
+
         System.out.println("Enter radius, height for cylinder");
         r = sc.nextInt();
         h = sc.nextInt();

@@ -1,5 +1,4 @@
 // Write a java program to read n students names from user, store them into linkedlist collection. Display the 	names in ascending order.	
-import java.text.Collator;
 import java.util.*;
 public class Slip34 {
      public static void main(String args[])
@@ -14,10 +13,16 @@ public class Slip34 {
             String s = sc.next();
             ll.add(s);
         }
-        Collections.sort(ll);
         sc.close();
-    
-        System.out.println("Sorted list of Students is: " + ll);
+
+        Collections.sort(ll);
+        System.out.println("Sorted list of Students is: ");
+        Iterator <String> iterator= ll.iterator();
+        while(iterator.hasNext())
+        {
+            System.out.println(iterator.next());
+        }
+        
 
     }
 }

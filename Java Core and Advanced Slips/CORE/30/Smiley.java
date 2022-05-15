@@ -3,20 +3,16 @@
 void drawArc(int top,int left,int width,int height,int star angle,int sweep angle)->Arc is drawn from start angle throught the
 angular distance specified by sweep angle.Zero Degree is horizontal at3o,clockposition, the arc is drawn counterclockwise if sweep angle 
 is positive , andclockwise is sweep angle is negative*/
-import java.axt.*;
+import java.awt.*;
 import java.applet.*;
-/*<applet code="Smiley" width=500 height=500></applet>*/
+
 public class Smiley extends Applet
 {
-	boolean flag;
-	Dimension d;
-	public void init()
-	{
-		//flag=true;
-	}
+
+
 	public void paint(Graphics g)
 	{
-		//d=getSize();
+		/*<applet code="Smiley" width=500 height=500></applet>*/
 		
 		g.drawOval(50,50,150,150);//big oval
 		g.drawOval(15,95,35,35);//left ear
@@ -28,9 +24,5 @@ public class Smiley extends Applet
 		g.drawOval(145,100,20,20);//right eye
 		g.drawArc(90,100,70,80,0,-175);//mouth
 		
-	}
-	public void stop()
-	{
-		//flag=true;
 	}
 }

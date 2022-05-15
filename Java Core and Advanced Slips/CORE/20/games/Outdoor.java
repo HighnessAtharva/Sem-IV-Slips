@@ -2,10 +2,6 @@ package games;
 
 public class Outdoor {
     protected String player;
-
-    public Outdoor() {
-    }
-
     public Outdoor(String p) {
         player = p;
     }

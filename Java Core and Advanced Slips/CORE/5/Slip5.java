@@ -2,16 +2,16 @@
 
 import java.io.*;
 
-class Slip5 {
+class Student{
     static int cnt;
     int rno;
     String nm;
 
-    Slip5() {
+    Student() {
         nm = "";
     }
 
-    Slip5(int rno, String name) {
+    Student(int rno, String name) {
         this.rno = rno;
         this.nm = name;
         cnt++;
@@ -21,24 +21,27 @@ class Slip5 {
     public String toString() {
         return "rno = " + this.rno + " nm = " + this.nm;
     }
-
+}
+ 
+class Slip5 {
     public static void main(String a[]) throws Exception {
         int n, i, rno;
         String name;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("enter no of students");
         n = Integer.parseInt(br.readLine());
-        Slip5 ob[] = new Slip5[n];
+        Student ob[] = new Student[n];
         for (i = 0; i < n; i++) {
             System.out.println("enter roll no");
             rno = Integer.parseInt(br.readLine());
             System.out.println("enter name");
             name = br.readLine();
-            ob[i] = new Slip5(rno, name);
+            ob[i] = new Student(rno, name);
         }
         System.out.println("Students are : ");
         for (i = 0; i < n; i++) {
             System.out.println(ob[i].toString());
         }
+   
     }
 }

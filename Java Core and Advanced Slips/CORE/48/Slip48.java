@@ -1,15 +1,11 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+import java.awt.event.*;
+import javax.swing.*;
 import javax.swing.JTextField;
 
 class Slip48 extends JFrame implements ActionListener {
 
     JButton jb1;
     JTextField jt1, jt2, jt3, lbl;
-
 
     Slip48() {
 
@@ -21,7 +17,6 @@ class Slip48 extends JFrame implements ActionListener {
         jt2.setBounds(90, 80, 150, 30);
         add(jt2);
 
-        
         jt3 = new JTextField("Item Quantity");
         jt3.setBounds(90, 110, 150, 30);
         add(jt3);
@@ -48,7 +43,7 @@ class Slip48 extends JFrame implements ActionListener {
         int b = Integer.parseInt(jt3.getText());
         int c = 0;
 
-        if (e.getSource().equals(jb1)) {
+        if (e.getSource()==(jb1)) {
             c = a * b;
             lbl.setText(String.valueOf(c) + " is the total price");
         }

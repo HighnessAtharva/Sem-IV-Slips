@@ -4,21 +4,24 @@
 import java.util.Scanner;
 
 class InvalidString extends Exception {
-
-    public InvalidString(String str) {
-        System.out.println("Less than 6 characters" + str);
+    InvalidString(String str) {
+        super(str);
     }
 }
 
 class Slip37 {
     public static void main(String[] args) throws InvalidString {
+    
         System.out.println("Enter a string");
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         sc.close();
+        
         if (str.length() < 6) {
-            throw new InvalidString("Invalid String");
+            throw new InvalidString("Less than 6 characters");
+            //once the exception is thrown, program flow breaks and the next block will not execute
         }
         System.out.println(str.toUpperCase());
     }
 }
+

@@ -1,8 +1,8 @@
 class Slip26 {
     public static void main(String arg[]) {
-        int num[] = new int[10];
-        int pr[] = new int[10];
-        int per[] = new int[10];
+        int num[] = new int[10]; // used to store all the command line arguments
+        int pr[] = new int[10]; // used to store all the prime nos
+        int per[] = new int[10]; // used to store all the perfect nos
         int flag = 0, i, j, c1 = 0, c2 = 0, sum = 0;
         for (i = 0; i < arg.length; i++) {
             num[i] = Integer.parseInt(arg[i]);
@@ -34,6 +34,5 @@ class Slip26 {
                 System.out.println(per[c2++]);
             }
         }
-
     }
 }

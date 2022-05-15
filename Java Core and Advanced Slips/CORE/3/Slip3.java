@@ -8,7 +8,7 @@ public class Slip3 {
         int n, sal = 0;
         String name = "";
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Hashtable h = new Hashtable();
+        Hashtable<String, Integer> h = new Hashtable<String, Integer>();
         System.out.println("\nEnter number of Employee : ");
         n = Integer.parseInt(br.readLine());
         for (int i = 1; i <= n; i++) {
@@ -18,29 +18,24 @@ public class Slip3 {
             sal = Integer.parseInt(br.readLine());
             h.put(name, sal);
         }
-
-        Enumeration k = h.keys(); //names
-        Enumeration v = h.elements(); // sal
-         // name
         System.out.println("\nEntered Info is:");
-        while (k.hasMoreElements()) {
-            System.out.println(k.nextElement() + " " + v.nextElement());
+        for (Map.Entry<String, Integer> m : h.entrySet()) {
+            String name1 = (String) m.getKey();
+            Integer sal1 = (Integer) m.getValue();
+            System.out.println("\nName : " + name1 + "\tSalary : " + sal1);
         }
 
         int max = 0; // to store the max salary
         String str = ""; // to store name of the employee with max salary
-        
-        // important to re-declare the k,v variables and set them to h.keys() and h.elements()
-        k = h.keys();
-        v = h.elements();
-        while (v.hasMoreElements()) {
-            sal = (Integer) v.nextElement();
-            name = (String) k.nextElement();
-            if (sal > max) {
-                max = sal;
-                str = name;
+
+        for (Map.Entry<String, Integer> m : h.entrySet()) {
+            String name1 = (String) m.getKey();
+            Integer sal1 = (Integer) m.getValue();
+            if (sal1 > max) {
+                max = sal1;
+                str = name1;
             }
         }
-        System.out.println(str + " has maximum salary is " + max);
+        System.out.println(str + " has maximum salary of " + max);
     }
 }

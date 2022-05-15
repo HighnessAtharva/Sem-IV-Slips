@@ -19,23 +19,24 @@ public class Slip47 extends JFrame implements KeyListener{
     setSize(300, 300);
     setVisible(true);
   }
- 
 
-  public void keyTyped(KeyEvent e) {
-    char s = e.getKeyChar();
-    LblOutPt.setText("Last key Pressed:" + s);
-  }
-
+  //must implement all the 3 methods since they are abstract
   public void keyPressed(KeyEvent e) {
+    LblOutPt.setText("Key Pressed:" + e.getKeyChar());
   }
 
+  //must implement all the 3 methods since they are abstract
   public void keyReleased(KeyEvent e) {
+    LblOutPt.setText("Key Released:" + e.getKeyChar());
+  }
+
+  //must implement all the 3 methods since they are abstract
+  public void keyTyped(KeyEvent e) {
+    LblOutPt.setText("Key Typed:" + e.getKeyChar());
   }
 
   public static void main(String[] ar) {
     Slip47 Frm = new Slip47();
-    // final int WIDTH = 250;
-    // final int HEIGHT = 100;
- 
+  
   }
 }

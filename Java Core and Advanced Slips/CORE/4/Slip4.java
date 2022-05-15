@@ -3,53 +3,67 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class Slip4 extends Frame {
+
+/*
+mouseClicked
+mouseEntered
+mouseExited
+mousePressed
+mouseReleased
+*/
+class Slip4 extends Frame implements MouseListener{
     TextField statusBar;
 
     Slip4() {
-      //start of addMouseListener
-        addMouseListener(new MouseAdapter() {
-            public void mouseClicked(MouseEvent e) {
-                statusBar.setText("Clicked at (" + e.getX() + "," + e.getY() + ")");
-                //call the repaint() method or this shit wont work bro. DO NOT FORGET
-                repaint();
-            }
-
-            public void mouseEntered(MouseEvent e) {
-                statusBar.setText("Entered at (" + e.getX() + "," + e.getY() + ")");
-                //call the repaint() method or this shit wont work bro. DO NOT FORGET
-                repaint();
-            }
-
-            public void mousePressed(MouseEvent e) {
-                statusBar.setText("Mouse Pressed");
-                //call the repaint() method or this shit wont work bro. DO NOT FORGET
-                repaint();
-            }
-            
-            public void mouseReleased(MouseEvent e) {
-                statusBar.setText("Mouse Released");
-                //call the repaint() method or this shit wont work bro. DO NOT FORGET
-                repaint();
-            }
-        });
-    //end of addMouseListener
+        // start of addMouseListener
+        addMouseListener(this); 
         
-         //start of addMouseListener
-        addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
-
-         //end of addMouseListener
         statusBar = new TextField(20);
         add(statusBar);
         setLayout(new FlowLayout());
         setSize(275, 300);
         setTitle("Mouse Click Position");
         setVisible(true);
-    }
+
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });   
+        }
+
+        public void mouseClicked(MouseEvent e) {
+            statusBar.setText("Clicked at (" + e.getX() + "," + e.getY() + ")");
+            // call the repaint() method or this shit wont work bro. DO NOT FORGET
+            repaint();
+        }
+
+        public void mouseEntered(MouseEvent e) {
+            statusBar.setText("Entered at (" + e.getX() + "," + e.getY() + ")");
+            // call the repaint() method or this shit wont work bro. DO NOT FORGET
+            repaint();
+        }
+
+        public void mouseExited(MouseEvent e) {
+            statusBar.setText("Mouse Exited");
+            // call the repaint() method or this shit wont work bro. DO NOT FORGET
+            repaint();
+        }
+
+
+        public void mousePressed(MouseEvent e) {
+            statusBar.setText("Mouse Pressed");
+            // call the repaint() method or this shit wont work bro. DO NOT FORGET
+            repaint();
+        }
+
+        public void mouseReleased(MouseEvent e) {
+            statusBar.setText("Mouse Released");
+            // call the repaint() method or this shit wont work bro. DO NOT FORGET
+            repaint();
+        }
+
+        
 
     public static void main(String[] args) {
         new Slip4();

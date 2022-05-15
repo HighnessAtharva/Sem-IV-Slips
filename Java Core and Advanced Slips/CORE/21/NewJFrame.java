@@ -2,7 +2,7 @@
 
 import javax.swing.*;
 import java.awt.*;
-
+import java.awt.event.*;
 public class NewJFrame extends JFrame {
 
     JTextField jTextField1;
@@ -23,27 +23,27 @@ public class NewJFrame extends JFrame {
         JButton jButton1 = new JButton();
         JButton jButton2 = new JButton();
         JButton jButton3 = new JButton();
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
         jLabel1.setForeground(new java.awt.Color(255, 102, 255));
         jButton1.setText("Find");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
         jButton2.setText("Replace");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
         jButton3.setText("Clear");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButton3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
@@ -63,16 +63,21 @@ public class NewJFrame extends JFrame {
         p.add(jButton2);
         p.add(jButton3);
         contentPane.add(p);
+
+
+        setVisible(true);
+        setSize(250, 200);
+        setResizable(false);
     }
 
-    void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
+    void jButton3ActionPerformed(ActionEvent evt) {
         jTextField1.setText(" ");
         jTextField2.setText(" ");
         jTextField3.setText(" ");
         jTextField4.setText(" ");
     }
 
-    void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    void jButton1ActionPerformed(ActionEvent evt) {
         int cnt = 0;
         String Str1 = jTextField1.getText();
         int len = (jTextField2.getText()).length();
@@ -86,7 +91,7 @@ public class NewJFrame extends JFrame {
         jTextField4.setText(" " + cnt);
     }
 
-    void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    void jButton2ActionPerformed(ActionEvent evt) {
         String str = jTextField1.getText();
         String nstr = str.replace(jTextField2.getText(), jTextField3.getText());
         jTextField4.setText(nstr);
@@ -94,9 +99,6 @@ public class NewJFrame extends JFrame {
     }
     public static void main(String args[]) {
         NewJFrame nf = new NewJFrame();
-        nf.setVisible(true);
-        nf.setSize(250, 200);
-        nf.setResizable(false);
     }
 }
 

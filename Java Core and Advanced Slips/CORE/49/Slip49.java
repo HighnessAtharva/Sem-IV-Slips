@@ -2,21 +2,18 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class Slip49 extends JFrame
-{ JLabel lbl;
-     JButton morning,evening;
+{ 
+     
+     JButton morning = new JButton("Good Morning");
+     JButton evening = new JButton ("Good Evening");
+     JLabel lbl = new JLabel ("");
+     
      Slip49()
-     {
-      
-    
-          morning = new JButton("Good Morning");
-          evening = new JButton ("Good Evening");
-         
-          lbl = new JLabel ("");
-          setLayout (new GridLayout(4,1));
+     {   
+          setLayout (new GridLayout(3,1));
           setSize (400,200);
-          add(morning);
-          add(evening);
-    
+          add(morning); //row 1
+          add(evening); //row 1
           add(lbl);
           setVisible(true);
 

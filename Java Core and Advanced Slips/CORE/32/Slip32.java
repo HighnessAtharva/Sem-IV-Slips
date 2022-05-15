@@ -3,34 +3,21 @@
 import java.util.*;
 
 class InvalidEmailID extends Exception{
-    String str1;
-
-    InvalidEmailID(String str2) {
-     str1=str2;
-    }
-    public String toString(){ 
-     return ("Invalid Email ID Entered. @ missing in "+str1) ;
+    InvalidEmailID(String email) {
+     super ("Invalid Email ID Entered. @ missing in "+email) ;
     }
  }
 
 class Slip32 {
     public static void main(String[] args) throws InvalidEmailID {
-        try{
         Scanner sc = new Scanner(System.in); // System.in is a standard input stream
         System.out.print("Enter Email: ");
-        String str = sc.nextLine(); // reads string
-        System.out.print("You have entered: " + str + "\n");
+        String email = sc.nextLine(); // reads string
         sc.close();
-        if (str.contains("@")) {
-            System.out.println("\nValid Email ID");
+        if (email.contains("@")) {
+            System.out.println("\nValid Email ID entered!");
         } else {
-            throw new InvalidEmailID(str);
+            throw new InvalidEmailID(email);
         }
         }
-        catch(InvalidEmailID e){
-            System.out.println(e);
-        }
-        
-
     }
-}

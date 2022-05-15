@@ -1,9 +1,10 @@
 // Write a java program to design a following GUI (Use Swing).
 
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 
-class Slip8 extends JFrame {
+class Slip8 extends JFrame implements ActionListener {
     Label l1, l2, l3, l4, l5, l6;
     TextField t1, t2, t3;
     TextArea t;
@@ -67,9 +68,17 @@ class Slip8 extends JFrame {
         setLayout(new FlowLayout(FlowLayout.LEFT));
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        b2.addActionListener(this);
     }
 
-   
+    public void actionPerformed(ActionEvent e) {
+        t.setText("");
+        t1.setText("");
+        t2.setText("");
+        t3.setText("");
+
+        // textfield.setText(null); //or use this
+    }
 
     public static void main(String a[]) {
         new Slip8();

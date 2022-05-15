@@ -1,18 +1,19 @@
+import java.util.Scanner;
 // Check palindrome
 public class Slip38    
 {    
     public static void main(String[] args) {    
-        String string = "Kayak";    
-        boolean flag = true;
+        System.out.println("Enter a string");
+        
+        Scanner sc= new Scanner(System.in);
+        String string = sc.nextLine();
+        string = string.toLowerCase();
 
-        string = string.toLowerCase();    
-        for(int i = 0; i < string.length()/2; i++){    
-            if(string.charAt(i) != string.charAt(string.length()-i-1)){    
-                flag = false;    
-                break;    
-            }    
-        }    
-        if(flag)    
+        sc.close();
+
+        String rev = new StringBuffer(string).reverse().toString();    
+        
+        if(string.compareTo(rev)==0)    
             System.out.println("Given string is palindrome");    
         else    
             System.out.println("Given string is not a palindrome");    

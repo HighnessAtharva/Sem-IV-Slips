@@ -18,11 +18,14 @@ public class HelloFont extends Frame {
 		setForeground(Color.RED);
 		setVisible(true);
 		setSize(500, 500);
-		addWindowListener(new MyWindowAdapter() {
-			public void windowClosing(WindowEvent e) {
-				dispose();
+
+		// this is added in the scope of the constructor of the class for GUI window
+		// closing. Does not require any abstract class implementation.
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent we) {
+				System.exit(0);
 			}
-		});// this in bracket is removed hence constructor is commented
+		});
 	}
 
 	public static void main(String args[]) {

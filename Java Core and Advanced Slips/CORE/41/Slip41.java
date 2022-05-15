@@ -8,14 +8,18 @@ public class Slip41 extends Frame implements ActionListener {
 
     Slip41() {
         super("AWT Buttons");
+        
         btnRed = new Button("Red");
-        btnRed.setBounds(25, 50, 250, 30);
-        btnRed.addActionListener(this);
-        add(btnRed);
         btnBlue = new Button("Blue");
+
+        btnRed.setBounds(25, 50, 250, 30);
         btnBlue.setBounds(25, 100, 250, 30);
-        btnBlue.addActionListener(this);
+        
+        add(btnRed);
         add(btnBlue);
+
+        btnRed.addActionListener(this);
+        btnBlue.addActionListener(this);
         setSize(300, 160);
         setLayout(null);
         setVisible(true);
