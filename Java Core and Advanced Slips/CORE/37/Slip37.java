@@ -1,6 +1,5 @@
 // Write a java program to accept string from user, if its length is less than 6, then throw user defined exception “Invalid String” otherwise display string in upper case. 
 
-//write bloatware code
 import java.util.Scanner;
 
 class InvalidString extends Exception {

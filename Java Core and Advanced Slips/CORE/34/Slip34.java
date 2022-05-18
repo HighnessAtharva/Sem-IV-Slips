@@ -16,11 +16,14 @@ public class Slip34 {
         sc.close();
 
         Collections.sort(ll);
+        //Sorting in reverse order, pass in second parameter Collections.reverseOrder()
+        // Collections.sort(ll, Collections.reverseOrder());
+        
         System.out.println("Sorted list of Students is: ");
-        Iterator <String> iterator= ll.iterator();
-        while(iterator.hasNext())
+        Iterator <String> it= ll.iterator();
+        while(it.hasNext())
         {
-            System.out.println(iterator.next());
+            System.out.println(it.next());
         }
         
 

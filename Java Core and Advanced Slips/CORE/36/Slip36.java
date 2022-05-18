@@ -14,9 +14,9 @@ class Slip36 {
 		ts1.add("C");
 
 		// System.out.println(ts1);
-		Iterator<String> iterator = ts1.iterator();
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
+		Iterator<String> it = ts1.iterator();
+		while (it.hasNext()) {
+			System.out.println(it.next());
 		}
 	}
 }

@@ -9,7 +9,7 @@ public class Slip47 extends JFrame implements KeyListener{
 
   public Slip47() {
     setTitle("Java Example of Key Event");
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLayout(new BorderLayout());
     add(LblPrmpt, BorderLayout.NORTH);
     add(Txt, BorderLayout.CENTER);
@@ -18,6 +18,11 @@ public class Slip47 extends JFrame implements KeyListener{
     Txt.addKeyListener(this);
     setSize(300, 300);
     setVisible(true);
+    addWindowListener(new WindowAdapter(){
+      public void windowClosing(WindowEvent e){
+        dispose();
+      }
+    });
   }
 
   //must implement all the 3 methods since they are abstract

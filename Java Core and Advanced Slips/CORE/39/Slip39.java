@@ -1,7 +1,6 @@
 // Working of Anonymous InnerClass
-
 abstract class Person {
-  abstract void eat();
+  abstract void eat(); 
 }
 
 class Slip39 {

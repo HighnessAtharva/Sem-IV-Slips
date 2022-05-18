@@ -6,22 +6,16 @@ import java.awt.event.*;
 public class Slip41 extends Frame implements ActionListener {
     Button btnRed, btnBlue;
 
-    Slip41() {
-        super("AWT Buttons");
-        
+    Slip41() {        
         btnRed = new Button("Red");
         btnBlue = new Button("Blue");
-
-        btnRed.setBounds(25, 50, 250, 30);
-        btnBlue.setBounds(25, 100, 250, 30);
-        
-        add(btnRed);
-        add(btnBlue);
-
         btnRed.addActionListener(this);
         btnBlue.addActionListener(this);
+        add(btnRed);
+        add(btnBlue);
+        setTitle("AWT Buttons");
         setSize(300, 160);
-        setLayout(null);
+        setLayout(new FlowLayout());
         setVisible(true);
         addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -41,5 +35,4 @@ public class Slip41 extends Frame implements ActionListener {
     public static void main(String[] args) {
         new Slip41();
     }
-
 }
