@@ -2,15 +2,15 @@
 public class Slip33 {
     static void palindrome(int start, int end) {
         for (int i = start; i <= end; i++) {
-            int num1 = i;
-            int num2 = 0;
-            while (num1 != 0) {
-                int rem = num1 % 10;
-                num1 /= 10;
-                num2 = num2 * 10 + rem;
+            int n = i;
+            int sum = 0;
+            while (n != 0) {
+                int rem = n % 10;
+                sum = sum*10 + rem;
+                n=n/10;
             }
 
-            if (i == num2)
+            if (i == sum)
                 System.out.print(i + " ");
         }
     }
