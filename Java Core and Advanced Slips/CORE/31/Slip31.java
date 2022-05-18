@@ -14,9 +14,10 @@ class Slip31 {
     static boolean checkNumber(int number) {
         int sum = 0;
         int tempNumber = number;
-
-        while (tempNumber != 0) {
-            sum = sum + fact(tempNumber % 10);
+        int rem;
+        while (tempNumber >0) {
+            rem= fact(tempNumber%10);
+            sum = sum + rem;
             tempNumber = tempNumber / 10;
         }
 

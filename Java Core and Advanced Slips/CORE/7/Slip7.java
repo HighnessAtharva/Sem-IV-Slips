@@ -10,8 +10,8 @@ class Slip7 extends Frame {
         Font f = new Font("Georgia", Font.PLAIN, 50);
         lblmsg.setFont(f);
         lblmsg.setAlignment(Label.CENTER);
-        setBackground(Color.blue);
-        setForeground(Color.red);
+        setBackground(Color.BLUE);
+        setForeground(Color.RED);
         add(lblmsg);
         setLayout(new GridLayout());
         setSize(500, 500);
@@ -24,7 +24,7 @@ class Slip7 extends Frame {
             }
         });
     }
-
+    
     public static void main(String arg[]) {
         Slip7 s = new Slip7();
 }}

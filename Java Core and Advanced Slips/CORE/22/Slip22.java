@@ -7,24 +7,21 @@ interface shape {
 
 class Circle implements shape {
     public float area(float r) {
-        return (3.14f * r * r);
+        return (pi * r * r);
     }
 }
 
-class sphere implements shape {
+class Sphere implements shape {
     public float area(float r) {
-        return (2 * 3.14f * r * r);
+        return (2 * pi * r * r);
     }
 }
 
 class Slip22 {
     public static void main(String args[]) {
         Circle cir = new Circle();
-        sphere sp = new sphere();
-        shape s;
-        s = cir;
-        System.out.println("Area of Circle:" + s.area(3));
-        s = sp;
-        System.out.println("Area of Sphere:" + s.area(5));
+        Sphere sp = new Sphere();
+        System.out.println("Area of Circle:" + cir.area(3));
+        System.out.println("Area of Sphere:" + sp.area(5));
     }
 }

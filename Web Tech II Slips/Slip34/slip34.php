@@ -1,8 +1,6 @@
 <!-- Write a self processing form using PHP to collect data from the user such as name, address, city, email and phone and after validating it for correct data, stores the data in the table “customers” in a database called “orders”. -->
 
-
 <?php
-
 if (isset($_POST['submit'])) {
     $host = 'localhost';
     $user = 'root';

@@ -76,6 +76,7 @@ class Slip15 {
         c.vol();
 
         System.out.println("Enter radius, height for cylinder");
+        //overwrite the value of the variable r and h!
         r = sc.nextInt();
         h = sc.nextInt();
         s = new Cylinder(r, h);

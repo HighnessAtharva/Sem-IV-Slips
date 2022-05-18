@@ -14,10 +14,10 @@ class Slip19 {
     public static void main(String args[]) {
     
         try {
-            Scanner sr = new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             System.out.println("Enter a number to get its sum");
-            n = sr.nextInt();
-            sr.close();
+            n = sc.nextInt();
+            sc.close();
             if (n == 0) {
                 throw new ZeroException();
             } else {

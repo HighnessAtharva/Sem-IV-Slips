@@ -25,8 +25,8 @@ public class NewJFrame extends JFrame {
         JButton jButton3 = new JButton();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
-        jLabel1.setForeground(new java.awt.Color(255, 102, 255));
+        jLabel1.setFont(new Font("Tahoma", 1, 14));
+        jLabel1.setForeground(Color.BLUE);
         jButton1.setText("Find");
         jButton1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent evt) {

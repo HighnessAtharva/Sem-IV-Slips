@@ -5,12 +5,15 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class InvalidPasswordException extends Exception {    
+    InvalidPasswordException(String s, int attempt){
+        System.out.println(s + "Attempt:"+ attempt+1);
+    }
 }
 
-public class Slip17 extends JFrame implements ActionListener {
+public class Slip17 extends Frame implements ActionListener {
     Label name, pass;
     TextField nameText;
-    JPasswordField passText;
+    TextField passText;
     Button login, end;
     static int attempt = 0;
 
@@ -19,15 +22,14 @@ public class Slip17 extends JFrame implements ActionListener {
         pass = new Label("Password:", Label.RIGHT);
 
         nameText = new TextField(20);
-        passText = new JPasswordField(20);
+        passText = new TextField(20);
 
-        login = new Button("Login");
+        login = new Button("LOGIN");
         end = new Button("END");
 
         login.addActionListener(this);
         end.addActionListener(this);
 
-        setLayout(new GridLayout(3, 2));
         add(name);
         add(nameText);
         add(pass);
@@ -35,26 +37,31 @@ public class Slip17 extends JFrame implements ActionListener {
         add(login);
         add(end);
 
+        setLayout(new GridLayout(3, 2));
         setTitle("Login Check");
         setSize(300, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+        
+        addWindowListener(new WindowAdapter(){
+            public void windowClosing(WindowEvent e){
+                dispose();
+            }
+        });
     }
 
     public void actionPerformed(ActionEvent ae) {
-        Button btn = (Button) ae.getSource();
-        if (btn == end) {
+        if (ae.getSource() == end) {
             System.exit(0);
         }
-        if (btn == login) {
+        if (ae.getSource() == login) {
             try {
                 String user = nameText.getText();
-                String pass = new String(passText.getPassword());
+                String pass = new String(passText.getText());
                 if (user.compareTo(pass) == 0) {
                     JOptionPane.showMessageDialog(null, "LoginSuccessfull", "Login", JOptionPane.INFORMATION_MESSAGE);
                     System.exit(0);
                 } else {
-                    throw new InvalidPasswordException();
+                    throw new InvalidPasswordException("Wrong", attempt);
                 }
             } catch (Exception e) {
                 attempt++;

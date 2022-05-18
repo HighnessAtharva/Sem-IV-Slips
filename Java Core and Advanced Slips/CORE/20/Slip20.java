@@ -1,4 +1,3 @@
-
 // Write a package for Games in Java, which have two classes Indoor and Outdoor.Use a function display () to generate the list of players for the specific games. (Use Parameterized constructor, finalize() method and Array Of Objects)
 import games.*;
 

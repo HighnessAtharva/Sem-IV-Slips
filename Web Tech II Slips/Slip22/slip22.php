@@ -111,8 +111,7 @@ if (isset($_POST['submit'])) {
         case 1:mastertable($e1);
             break;
         case 2:echo "Sorted details <br>";
-            function srt($a, $b)
-        {
+            function srt($a, $b){
                 return strcmp($a->code, $b->code);
             }
             mastertable($e1);

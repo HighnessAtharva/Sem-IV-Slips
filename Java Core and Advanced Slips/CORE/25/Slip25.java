@@ -4,11 +4,11 @@ class Employee {
     String name;
     int sal;
     Employee(String n, int s) {
-        name = n;
-        sal = s;
+        this.name = n;
+        this.sal = s;
     }
     int getSalary() {
-        return sal;
+        return this.sal;
     }
 
 }
@@ -18,12 +18,12 @@ class Manager extends Employee{
 
     Manager(String n, int sal, int h, int t) {
         super(n, sal);
-        hra = h;
-        ta = t;
+        this.hra = h;
+        this.ta = t;
     }
 
     int getSalary() {
-        return (super.getSalary() + hra + ta);
+        return (super.getSalary() + this.hra + this.ta);
     }
 }
 
