@@ -3,16 +3,14 @@
 <head>
     <script type="text/javascript">
         function m1(str) {
-            var ob = false;
-            ob = new XMLHttpRequest();
+            xhttp = new XMLHttpRequest();
 
-            ob.open("GET", "slip15.php?q=" + str);
-            ob.send();
+            xhttp.open("GET", "slip15.php?q=" + str);
+            xhttp.send();
 
-
-            ob.onreadystatechange = function() {
-                if (ob.readyState == 4 && ob.status == 200) {
-                    document.getElementById("a").innerHTML = ob.responseText;
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("a").innerHTML = this.responseText;
                 }
             }
         }
@@ -22,7 +20,7 @@
 <body>
     <form>
 
-        Search<input type=text name=search size="20" onkeyup="m1(form.search.value)">
+        Search<input type=text name=search size="20" onkeyup="m1(this.value)">
 
         <input type=button value="submit" onclick="m1(form.search.value)">
 

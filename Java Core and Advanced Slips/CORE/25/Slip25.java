@@ -27,7 +27,7 @@ class Manager extends Employee{
     }
 }
 
-class Slip25 {
+public class Slip25 {
     public static void main(String args[]) {
         Manager m1 = new Manager("Raj", 20000, 200, 800); 
         System.out.println("Salary of Manager= " + m1.getSalary());

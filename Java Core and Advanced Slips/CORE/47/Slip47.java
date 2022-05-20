@@ -4,16 +4,16 @@ import java.awt.event.*;
 
 public class Slip47 extends JFrame implements KeyListener{
   private JLabel LblPrmpt = new JLabel("Press keys as Desired Below:");
-  private JLabel LblOutPt = new JLabel("Key Typed is:");
+  private JLabel LblOutPt = new JLabel("");
   private JTextField Txt = new JTextField(10);
 
   public Slip47() {
     setTitle("Java Example of Key Event");
     //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setLayout(new BorderLayout());
-    add(LblPrmpt, BorderLayout.NORTH);
-    add(Txt, BorderLayout.CENTER);
-    add(LblOutPt, BorderLayout.SOUTH);
+    setLayout(new GridLayout(3,1));
+    add(LblPrmpt);
+    add(Txt);
+    add(LblOutPt);
     // addKeyListener(this);
     Txt.addKeyListener(this);
     setSize(300, 300);

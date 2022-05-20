@@ -19,9 +19,7 @@ public class Slip6 extends Applet implements ActionListener {
         GridLayout g1 = new GridLayout(4, 5);
         setLayout(g1);
 
-        for (int i = 0; i < 10; i++) {
-            b[i] = new Button("" + i);
-        }
+        
         add = new Button("add");
         sub = new Button("sub");
         mul = new Button("mul");
@@ -31,6 +29,9 @@ public class Slip6 extends Applet implements ActionListener {
         equals = new Button("equals");
         t1.addActionListener(this);
         add(t1);
+        for (int i = 0; i < 10; i++) {
+            b[i] = new Button("" + i);
+        }
         for (int i = 0; i < 10; i++) {
             add(b[i]);
         }

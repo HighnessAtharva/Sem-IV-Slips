@@ -6,15 +6,15 @@ $mypwd = "";
 $mydb = "students";
 echo "<h3>PDO - Students DB (SYBCA TABLE)</h3>";
 try{
-	$myConn = new PDO("mysql:host=$myhost;dbname=$mydb",$myuser,$mypwd);
+	$pdo = new PDO("mysql:host=$myhost;dbname=$mydb",$myuser,$mypwd);
 	echo "Successfully connected!!<br>";
 } catch(Exception $e){
 	echo "oops sorry".$e->getMessage();
 }
 
-$sql = $myConn->query("SELECT * FROM SYBCA");
+$sql = $pdo->query("SELECT * FROM SYBCA");
 $result = $sql->fetchAll(PDO::FETCH_ASSOC);
-$myConn = null;
+$pdo = null;
 echo "<table border=1>";
 foreach($result as $student){
 	echo "<tr>

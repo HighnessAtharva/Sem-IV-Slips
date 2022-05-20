@@ -11,7 +11,6 @@ echo "<br>";
 file_put_contents($filename, "\n", FILE_APPEND);
 file_put_contents($filename, ' I like to play sports, read books and play music.', FILE_APPEND);  
 
-
 //display the file with additions. 
 echo (file_get_contents($filename));
 echo "<br>";

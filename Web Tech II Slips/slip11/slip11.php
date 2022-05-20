@@ -7,16 +7,15 @@
 <script language="javascript">
 function hello()
 {
-    var xmlhttp;
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.onreadystatechange=function()
+    var xhttp=new XMLHttpRequest();;
+    xhttp.onreadystatechange=function()
     {
-    if (xmlhttp.readyState==4 && xmlhttp.status==200){
-    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    if (this.readyState==4 && this.status==200){
+    document.getElementById("myDiv").innerHTML=this.responseText;
     }             
     }
-xmlhttp.open("GET","slip11.txt",true);
-xmlhttp.send();
+xhttp.open("GET","slip11.txt",true);
+xhttp.send();
 }
 </script>
 </head>

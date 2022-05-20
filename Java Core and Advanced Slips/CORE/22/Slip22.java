@@ -1,7 +1,7 @@
 // Define an Interface Shape with abstract method area(). Write a java program to calculate an area of Circle and Sphere.(use final keyword)
 
 interface shape {
-    final static float pi = 3.14f;
+    final float pi = 3.14f;
     float area(float r);
 }
 

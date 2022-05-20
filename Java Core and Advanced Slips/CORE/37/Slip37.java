@@ -9,6 +9,7 @@ class InvalidString extends Exception {
 }
 
 class Slip37 {
+
     public static void main(String[] args) throws InvalidString {
     
         System.out.println("Enter a string");

@@ -6,10 +6,8 @@ is positive , andclockwise is sweep angle is negative*/
 import java.awt.*;
 import java.applet.*;
 
-public class Smiley extends Applet
+class Smiley extends Applet
 {
-
-
 	public void paint(Graphics g)
 	{
 		/*<applet code="Smiley" width=500 height=500></applet>*/

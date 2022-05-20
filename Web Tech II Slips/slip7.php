@@ -21,10 +21,6 @@
 
 <?php
 if(isset($_POST["submit"])){
-	/* $uname = $_POST["uname"];
-	$upwd = $_POST["upwd"];
-	$uname = strip_tags($uname);
-	$upwd = strip_tags($upwd); */
 	$uname = strip_tags($_POST["uname"]);
 	$upwd = strip_tags($_POST["upwd"]);
 	if($uname == "Admin" && $upwd == "Abcd1234"){

@@ -13,12 +13,12 @@ class Slip31 {
 
     static boolean checkNumber(int number) {
         int sum = 0;
-        int tempNumber = number;
+        int n = number;
         int rem;
-        while (tempNumber >0) {
-            rem= fact(tempNumber%10);
+        while (n >0) {
+            rem= fact(n%10);
             sum = sum + rem;
-            tempNumber = tempNumber / 10;
+            n = n / 10;
         }
 
         if (sum == number) return true;
@@ -31,7 +31,7 @@ class Slip31 {
         System.out.println("Enter any number:");
         n = sc.nextInt();
         sc.close();
-        if (checkNumber(n))
+        if (checkNumber(n)==true)
             System.out.println(n + " is a krishnamurthy number");
         else
             System.out.println(n + "is not a krishnamurthy number");

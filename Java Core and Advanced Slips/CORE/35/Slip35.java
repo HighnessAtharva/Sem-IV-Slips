@@ -1,12 +1,12 @@
 // Write a Java program to create class Employee (eno,ename,age,salary).If  age is less than 18 then raise an exception ‘Age not valid Exception’ else display the record 
 class AgeException extends Exception {
-    public AgeException(String str) {
+    AgeException(String str) {
         super(str);
     }
 }
 
 class Employee {
-    public Employee(int eno, String name, int age, int salary) throws AgeException{
+    Employee(int eno, String name, int age, int salary) throws AgeException{
         if (age < 18) {
             throw new AgeException("Age should be greater than or equal to 18");
         } else {
@@ -20,7 +20,7 @@ class Employee {
 
 public class Slip35 {
     
-    public static void main(String[] args) throws AgeException {
+    public static void main(String[] args) {
         try {
             System.out.println("------For Employee 1------");
             Employee e1 = new Employee(1, "Raj", 19, 10000);

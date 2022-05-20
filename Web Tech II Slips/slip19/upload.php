@@ -26,8 +26,7 @@ if (isset($_FILES['pdfFile'])) {
         if (file_exists($dest_file)) {
             print "The file name already exists!!";
         } else {
-            move_uploaded_file($source_file, $dest_file)
-            or die("Error!!");
+            move_uploaded_file($source_file, $dest_file) or die("Error!!");
             if ($_FILES['pdfFile']['error'] == 0) {
                 print "Pdf file uploaded successfully!";
                 print "<b><u>Details : </u></b><br/>";

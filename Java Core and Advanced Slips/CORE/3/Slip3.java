@@ -18,12 +18,6 @@ public class Slip3 {
             sal = Integer.parseInt(br.readLine());
             h.put(name, sal);
         }
-        System.out.println("\nEntered Info is:");
-        for (Map.Entry<String, Integer> m : h.entrySet()) {
-            String name1 = (String) m.getKey();
-            Integer sal1 = (Integer) m.getValue();
-            System.out.println("\nName : " + name1 + "\tSalary : " + sal1);
-        }
 
         int max = 0; // to store the max salary
         String str = ""; // to store name of the employee with max salary

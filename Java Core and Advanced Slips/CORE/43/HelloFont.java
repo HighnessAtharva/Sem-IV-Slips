@@ -1,7 +1,6 @@
 
 //Q.4a Write a java program to display “Hello Java” with settings Font- Georgia, Foreground color- Red, background color – Blue on the Frame (Use Label)
 import java.awt.*;
-import java.applet.*;
 import java.awt.event.*;
 
 public class HelloFont extends Frame {

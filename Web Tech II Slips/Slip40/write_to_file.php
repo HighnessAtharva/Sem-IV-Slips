@@ -7,7 +7,7 @@ file_put_contents('mydata.txt', print_r($arraynums, TRUE));
 
 echo ("Reading from file mydata.txt<br><br>");
 $readnums=file_get_contents('mydata.txt');
-
+echo $readnums;
 echo ("Calculating...");
 $minimum=min($arraynums);
 $maximum=max($arraynums);

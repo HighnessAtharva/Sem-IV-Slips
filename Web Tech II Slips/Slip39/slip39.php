@@ -6,7 +6,7 @@ if (isset($_POST["submit"])) {
     $username = "root";
     $password = "";
     $dbname = "bca_programs";
-    $conn = mysqli_connect($hostname, $username, $password, $dbname);
+    $conn = mysqli_connect($hostname, $username, $password, $dbname) or die("Connection failed: " . mysqli_connect_error());
     $uname = strip_tags($_POST["uname"]);
     $upwd = strip_tags($_POST["upwd"]);
     if ($conn) {
@@ -20,10 +20,9 @@ if (isset($_POST["submit"])) {
         } else {
             echo "Invalid Username or Password!";
         }
-    } else {
-        die("Connection Failed: " . mysqli_connect_error());
+    } 
 
-    }
+    
 }
 ?>
 
