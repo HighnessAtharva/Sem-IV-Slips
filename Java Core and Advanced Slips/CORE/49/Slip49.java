@@ -29,11 +29,11 @@ public class Slip49 extends JFrame implements ActionListener{
 
      }
 
-     public void actionPerformed(ActionEvent ae) {
-          if (ae.getSource() == morning) {
+     public void actionPerformed(ActionEvent e) {
+          if (e.getSource() == morning) {
                lbl.setText("Good Morning is pressed");
           }
-          if (ae.getSource() == evening) {
+          if (e.getSource() == evening) {
                lbl.setText("Good Evening is pressed");
           }
      }

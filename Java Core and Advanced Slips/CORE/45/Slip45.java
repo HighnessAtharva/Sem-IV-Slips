@@ -26,14 +26,14 @@ public class Slip45 extends JFrame implements ActionListener {
           maybe.addActionListener(this);
      }
 
-     public void actionPerformed(ActionEvent ae) {
-          if (ae.getSource() == yes) {
+     public void actionPerformed(ActionEvent e) {
+          if (e.getSource() == yes) {
                lbl.setText("Button Yes is pressed");
           }
-          if (ae.getSource() == no) {
+          if (e.getSource() == no) {
                lbl.setText("Button No is pressed");
           }
-          if (ae.getSource() == maybe) {
+          if (e.getSource() == maybe) {
                lbl.setText("Button Maybe is pressed");
           }
      }

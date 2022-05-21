@@ -29,22 +29,22 @@ public class NewJFrame extends JFrame {
         jLabel1.setForeground(Color.BLUE);
         jButton1.setText("Find");
         jButton1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+            public void actionPerformed(ActionEvent e) {
+                jButton1ActionPerformed(e);
             }
         });
 
         jButton2.setText("Replace");
         jButton2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+            public void actionPerformed(ActionEvent e) {
+                jButton2ActionPerformed(e);
             }
         });
 
         jButton3.setText("Clear");
         jButton3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+            public void actionPerformed(ActionEvent e) {
+                jButton3ActionPerformed(e);
             }
         });
 
@@ -70,14 +70,14 @@ public class NewJFrame extends JFrame {
         setResizable(false);
     }
 
-    void jButton3ActionPerformed(ActionEvent evt) {
+    void jButton3ActionPerformed(ActionEvent e) {
         jTextField1.setText(" ");
         jTextField2.setText(" ");
         jTextField3.setText(" ");
         jTextField4.setText(" ");
     }
 
-    void jButton1ActionPerformed(ActionEvent evt) {
+    void jButton1ActionPerformed(ActionEvent e) {
         int cnt = 0;
         String Str1 = jTextField1.getText();
         int len = (jTextField2.getText()).length();
@@ -91,7 +91,7 @@ public class NewJFrame extends JFrame {
         jTextField4.setText(" " + cnt);
     }
 
-    void jButton2ActionPerformed(ActionEvent evt) {
+    void jButton2ActionPerformed(ActionEvent e) {
         String str = jTextField1.getText();
         String nstr = str.replace(jTextField2.getText(), jTextField3.getText());
         jTextField4.setText(nstr);

@@ -54,8 +54,8 @@ public class Slip6 extends Applet implements ActionListener {
         equals.addActionListener(this);
     }
 
-    public void actionPerformed(ActionEvent ae) {
-        String str = ae.getActionCommand();
+    public void actionPerformed(ActionEvent e) {
+        String str = e.getActionCommand();
         char ch = str.charAt(0);
         if (Character.isDigit(ch))
             t1.setText(t1.getText() + str);
