@@ -8,11 +8,10 @@
 function hello()
 {
     var xhttp=new XMLHttpRequest();;
-    xhttp.onreadystatechange=function()
-    {
-    if (this.readyState==4 && this.status==200){
-    document.getElementById("myDiv").innerHTML=this.responseText;
-    }             
+    xhttp.onreadystatechange=function(){
+        if (this.readyState==4 && this.status==200){
+            document.getElementById("myDiv").innerHTML=this.responseText;
+        }             
     }
 xhttp.open("GET","slip11.txt",true);
 xhttp.send();

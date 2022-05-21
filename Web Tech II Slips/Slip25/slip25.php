@@ -22,12 +22,12 @@ if (isset($_POST)) {
 <html>
 <body>
 <form action="" method="post">
-    <center>
+
         <h2>Enter Marks for Student:</h2>
         <table>
         <input type="hidden" value="<?php echo $name; ?>" name="name">
-                    <input type="hidden" value="<?php echo $addr; ?>" name="addr">
-                    <input type="hidden" value="<?php echo $class; ?>" name="class">
+        <input type="hidden" value="<?php echo $addr; ?>" name="addr">
+        <input type="hidden" value="<?php echo $class; ?>" name="class">
 <tr>
     <td>Java : </td>
     <td><input type="text" name="m1"></td>
@@ -57,7 +57,7 @@ if (isset($_POST)) {
             <td><input type="submit" value=Next></td>
         </tr>
         </table>
-        </center>
+
 
     </form>
 </body>

@@ -9,23 +9,23 @@ d. Display salary.	 -->
     <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="row py-3 " >
-                <div class="pt-4 col-md-5 form-group py-5 px-5" style="border:2px solid green">
-                    <h4 class="text-center">Select following Options</h4><br>
+        <div >
+            <div >
+                <div >
+                    <h4>Select following Options</h4><br>
                     <form action="#" method="post">
                         <input type="radio" name="r1" value="1" class=""> Master table<br>
                         <input type="radio" name="r1" id="" value="2"> Sorting By Emp_Code <br>
-                        <div class="form-group row">
-                            <label class="col-sm-5 col-form-label">
+                        <div>
+                    
                             <input type="radio" name="r1" value="3"> Search By Name</label>
                             <div class="col-sm-6">
                                 <input type="text" name="nm" class="form-control">
                             </div>
                         </div>
                         <input type="radio" name="r1" id="" value="4"> Display Salary <br><br>
-                        <input type="submit" value="Submit" name="submit" class="btn btn-outline-primary">
-                        <input type="reset" value="Clear" class=" ml-2 btn btn-outline-danger">
+                        <input type="submit" value="Submit" name="submit">
+                        <input type="reset" value="Clear">
                     </form>
                 </div>
                 <div class="col-md-7">
