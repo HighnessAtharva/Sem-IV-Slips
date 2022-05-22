@@ -1,0 +1,13 @@
+SLIP 9 - ATHARVA SHAH
+
+Q.1- Write a java program to read n Students names from user, store them into the ArrayList collection. The program should not allow duplicate names. Display the names in Ascending order.  [15] 
+ 
+Q.2- Write a java program which accepts an email address of user. If the email does not contain ‘@’ symbol, then throw an user defined exception ‘Invalid email id’. [25] 
+ 
+Q.3- Write a PHP script to connect to the database “bmcc_students” and display the message “Database connection successful. [15] 
+
+Q.4- Write a PHP script to accept name, phone and email address from a HTML form and store this data in a table called “customers” in “orders” database. Assume that “customers” table has only name, phone and email address fields. [25] 
+ 
+Q.5– Journal [10] 
+Q.6– Viva 	[10] 
+ 
